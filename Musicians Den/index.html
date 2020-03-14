@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<title>Musician's Den</title>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/ebdcb2fe93.js" crossorigin="anonymous"></script>
+  <script src="js/md.js"></script>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="Stylesheet" href="css/style.css" type="text/css" media="screen">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fas fa-bars"></i>
+    </a>
+    <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-user"></i> About</a>
+    <a href="#lessons" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-graduation-cap"></i> Lessons</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-th"></i> Performances</a>
+    <a href="#customShop" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-guitar"></i> Custom Shop</a>
+    <a href="calendar.html" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-calendar"></i> Calendar</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-envelope"></i> Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+    <a href="#lessons" class="w3-bar-item w3-button" onclick="toggleFunction()">Lessons</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Performances</a>
+    <a href="#customShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Custom Shop</a>
+    <a href="#calendar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Calendar</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">The<span class="w3-hide-small"> Musician's</span> Den</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center"><i class="fas fa-user"></i> ABOUT US</h3>
+  <p class="w3-center"><em>We love music</em></p>
+  <p>Music has always been our passion. After touring and performing across the United States, and recording 2 studio albums we found ourselves settled down in Castle Rock, Colorado working in the corporate world to raise our family. In 2018 we took a leap of faith
+      and decided to re-focus on music. Instead of touring and performing, we found our passion in teaching and sharing our love of music with our students. Just as important as learning about music, we want our students to learn about the joy of performing music for others.
+      We do this by offering multiple performance opportunities each year, and since we have both vocal and guitar students, there are always opportunities to perform with other live musicians.
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Charlene</b></p><br>
+      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Charlene" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Here is where Charlene can tell her story...
+        I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Greg</b></p><br>
+      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Greg" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Here is where Greg can tell his story...
+        I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">30+</span><br>
+    Vocal Students
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">30+</span><br>
+    Guitar Students
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">60+</span><br>
+    Happy Musicians
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">4</span><br>
+    Live Performances
+  </div>
+</div>
+
+<!-- Lessons Container -->
+<div class="w3-container w3-padding-64" id="lessons">
+<!--<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">-->
+  <div class="w3-content">
+    <h3 class="w3-center"><i class="fas fa-graduation-cap"></i> LESSONS</h3>
+    <p class="w3-center"><em>Learn about our unique approach to the right lesson plan for you</em></p>
+    <!--<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">LESSONS</h1>-->
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Tier1');" id="defaultLesson">
+        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Tier 1</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Tier2');">
+        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Tier 2</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Tier3');">
+        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Tier 3</div>
+      </a>
+    </div>
+
+    <div id="Tier1" class="w3-container menu w3-padding-32 w3-white">
+      <p>
+        Explain Tier 1 lesson approach. Each Tier has its own "menu" content for pricing descriptions, and anything else
+        to help explain Tier 1!
+      </p>
+      <h3><b>Individual monthly</b> <span class="w3-right w3-tag md-purple w3-round">$125.00</span></h3>
+      <p class="w3-text-grey">Individuals in Tier 1 will experience this type of lesson...</p>
+      <hr>
+   
+      <h3><b>Family monthly</b> <span class="w3-right w3-tag md-purple w3-round">$200.00</span></h3>
+      <p class="w3-text-grey">Family for Tier 1 is 2 students from the same family...</p>
+      <hr>
+    </div>
+
+    <div id="Tier2" class="w3-container menu w3-padding-32 w3-white">
+      <p>
+        Explain Tier 2 lesson approach. Each Tier has its own "menu" content for pricing descriptions, and anything else
+        to help explain Tier 2!
+      </p>
+      <h3><b>Individual monthly</b> <span class="w3-right w3-tag md-purple w3-round">$125.00</span></h3>
+      <p class="w3-text-grey">Individuals in Tier 2 will experience this type of lesson...</p>
+      <hr>
+   
+      <h3><b>Family monthly</b> <span class="w3-right w3-tag md-purple w3-round">$200.00</span></h3>
+      <p class="w3-text-grey">Family for Tier 2 is 2 students from the same family...note this will require individual lessons for each student to be scheduled.</p>
+      <hr>
+    </div>
+
+    <div id="Tier3" class="w3-container menu w3-padding-32 w3-white">
+      <p>
+        Explain Tier 3 lesson approach. Each Tier has its own "menu" content for pricing descriptions, and anything else
+        to help explain Tier 3!
+      </p>
+      <!--<h3><b>Individual monthly</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$125.00</span></h3>-->
+      <h3><b>Individual monthly</b> <span class="w3-right w3-tag md-purple w3-round">$125.00</span></h3>
+      <p class="w3-text-grey">Individuals in Tier 3 will experience this type of lesson...</p>
+      <hr>
+   
+      <h3><b>Family monthly</b> <span class="w3-right w3-tag md-purple w3-round">$200.00</span></h3>
+      <p class="w3-text-grey">Family for Tier 3 is 2 students from the same family...note this will require individual lessons for each student to be scheduled.</p>
+      <hr>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- End of Menu section-->
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">OUR STUDENTS</h3>
+  <p class="w3-center"><em>Here are some photos of our students performing what they've learned!<br> Click on the images to make them bigger, then click anywhere to return...</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width)
+       To add more photos, copy a div grouping of 4 images and paste below the currently defined images, make sure Load More button
+       is in the bottom div grouping. Suggest keeping this to a limit, maybe 16-20 total images? -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/chris-stapleton.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 01">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/taylor-swift.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 02">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/evh.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 03">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/michael-buble.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 04">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/adele.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 05">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/freddie.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 06">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/john-mayer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 07">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/dickey-betts.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 08">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/chris-stapleton.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 09">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/taylor-swift.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 10">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/evh.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 11">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/michael-buble.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 12">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/adele.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 13">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/freddie.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 14">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/john-mayer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 15">
+    </div>
+
+    <div class="w3-col m3 md-thumbnail">
+      <img src="images/dickey-betts.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Student 16">
+    </div>
+
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" id="loadMore">Load More</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Container (Testimonial Section) -->
+<div class="w3-content w3-container w3-padding-64" id="testimonials">
+  <h3 class="w3-center">TESTIMONIALS</h3>
+  <p class="w3-center"><em>Read what some of our students have to say</em></p>
+  <p>"I have been playing the guitar for over 25 years. Greg was able to connect to my goals and focus on areas that I want to improve in, and I notice progress every week!" - Tim R.</p>
+</div>
+
+<!-- Container (Custom Shop Section) -->
+<div class="w3-content w3-container w3-padding-64" id="customShop">
+  <h3 class="w3-center"><i class="fas fa-guitar"></i> CUSTOM SHOP</h3>
+  <p class="w3-center"><em>Awesome deals on instruments and repair</em></p>
+
+  <div class="w3-row">
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+        Looking for a great guitar for your beginner student? Looking to add a guitar to your collection? Need a tune-up or a repair to get your guitar sounding awesome?
+        Check out the Musician's Den offereings. We find great guitars and fix them up so they are playing their best. With all different sizes and styles you can find a 
+        great deal.
+      </p>
+    </div>
+
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <br>
+      <img src="images/guitars.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photos of guitars" width="500" height="333">
+    </div>
+
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE IS MUSICIAN'S DEN</h3>
+  <p class="w3-center"><em>We'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="images/the-den.png" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fas fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Castle Rock, Colorado<br>
+        <i class="fas fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 555.555.5555<br>
+        <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+      </div>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button md-purple w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+  </div>
+</footer>
+
+<script>
+  // Activate defaultLesson when page loads
+  document.getElementById("defaultLesson").click();
+</script>
+
+</body>
+</html>
