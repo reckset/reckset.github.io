@@ -19,6 +19,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-size: 100% auto; /* part of parallax branch changes */
 }
 
 /* First image (Logo. Full height) */
@@ -45,7 +46,7 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones. 1600px was too wide, is 749px too narrow? Test more... */
-@media only screen and (max-device-width: 749px) {
+@media only screen and (max-device-width: 768px) { /* part of parallax branch changes this was 749 */
   .bgimg-1, .bgimg-2, .bgimg-3 {
     /* background-attachment: scroll; */
     background-attachment: inherit;
