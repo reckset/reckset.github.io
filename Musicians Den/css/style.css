@@ -13,6 +13,27 @@ body, html {
   color: white;
 }
 
+#myMediumNavbar {
+  background-color: rgba(0,0,0,.3);
+  color: white;
+}
+
+#navDemo {
+  color: white;
+}
+
+/* NavBar sizing */
+/* original sizes
+@media (max-width:992px) and (min-width:601px){.md-hide-medium{display:none!important}}
+@media (max-width:600px){.md-hide-small{display:none!important}}
+@media (min-width:993px){.md-hide-large{display:none!important}}
+*/
+
+/* adjust sizes for TMD */
+@media (max-width:1049px) and (min-width:660px){.md-hide-medium{display:none!important}}
+@media (max-width:659px){.md-hide-small{display:none!important}}
+@media (min-width:1050px){.md-hide-large{display:none!important}}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
