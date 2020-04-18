@@ -38,6 +38,14 @@ function myFunction() {
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
+
+    var navbarMedium = document.getElementById("myMediumNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbarMedium.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbarMedium.className = navbarMedium.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+
 }
     
 // Used to toggle the menu on small screens when clicking on the menu button

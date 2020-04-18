@@ -17,40 +17,55 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <!-- Menu bar icon when screen is small and menu collapsed -->
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fas fa-bars"></i>
-    </a>
+    <!-- Contact information and Social Media on the right side of Navbar for large screens -->
+    <a class="w3-bar-item w3-right md-hide-small md-hide-medium" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+    <a class="w3-bar-item w3-right md-hide-small md-hide-medium" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+    <span class="w3-bar-item w3-right md-hide-small md-hide-medium" style="font-size: small; padding: 10px 16px;">Castle Rock, CO</span>
+    <a class="w3-bar-item w3-right md-hide-small md-hide-medium" style="font-size: small; padding: 10px 16px;" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email</a>
+    <span class="w3-bar-item w3-right md-hide-small md-hide-medium" style="font-size: small; padding: 10px 16px;">555.555.5555</span>
 
-    <!-- Contact information and Social Media on the right side of Navbar -->
-    <a class="w3-bar-item w3-right" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
-    <a class="w3-bar-item w3-right" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
-    <span class="w3-bar-item w3-right" style="font-size: small; padding: 10px 16px;">Castle Rock, CO</span>
-    <a class="w3-bar-item w3-right" style="font-size: small; padding: 10px 16px;" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email</a>
-    <span class="w3-bar-item w3-right" style="font-size: small; padding: 10px 16px;">555.555.5555</span>
+    <!-- Contact information and Social Media for small and medium screens -->
+    <a class="w3-bar-item w3-right md-hide-large" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+    <a class="w3-bar-item w3-right md-hide-large" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+    <span class="w3-bar-item w3-right md-hide-large" style="font-size: small; padding: 10px 16px;">Castle Rock, CO</span>
+    <a class="w3-bar-item w3-right md-hide-large" style="font-size: small; padding: 10px 16px;" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email</a>
+    <span class="w3-bar-item w3-right md-hide-large" style="font-size: small; padding: 10px 16px;">555.555.5555</span>
 
     <!-- Navigation links -->
-    <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
-    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small">About</a>
-    <a href="index.html#lessons" class="w3-bar-item w3-button w3-hide-small">Lessons</a>
-    <a href="index.html#portfolio" class="w3-bar-item w3-button w3-hide-small">Performances</a>
-    <a href="index.html#customShop" class="w3-bar-item w3-button w3-hide-small">Custom Shop</a>
-    <a href="calendar.html" class="w3-bar-item w3-button w3-hide-small">Calendar</a>
-    <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    <a href="index.html#home" class="w3-bar-item w3-button md-hide-small md-hide-medium">Home</a>
+    <a href="#lessons" class="w3-bar-item w3-button md-hide-small md-hide-medium">Lessons</a>
+    <a href="#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-medium">Events</a>
+    <a href="calendar.html" class="w3-bar-item w3-button md-hide-small md-hide-medium">Studio Info</a>
+    <a href="#customShop" class="w3-bar-item w3-button md-hide-small md-hide-medium">Custom Shop</a>
+    <a href="#about" class="w3-bar-item w3-button md-hide-small md-hide-medium">About Us</a>
+    <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-medium">Contact</a>
+  </div>
+
+  <!-- Navbar on medium screens -->
+  <div class="w3-bar" id="myMediumNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black md-hide-medium md-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fas fa-bars"></i>
+    </a>
+    <!-- Home button stays on in small mode as well -->
+    <a href="index.html#home" class="w3-bar-item w3-button md-hide-large">Home</a>
+    <a href="#lessons" class="w3-bar-item w3-button md-hide-small md-hide-large">Lessons</a>
+    <a href="#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-large">Events</a>
+    <a href="calendar.html" class="w3-bar-item w3-button md-hide-small md-hide-large">Studio Info</a>
+    <a href="#customShop" class="w3-bar-item w3-button md-hide-small md-hide-large">Custom Shop</a>
+    <a href="#about" class="w3-bar-item w3-button md-hide-small md-hide-large">About Us</a>
+    <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-large">Contact</a>
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-    <a href="index.html#lessons" class="w3-bar-item w3-button" onclick="toggleFunction()">Lessons</a>
-    <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Performances</a>
-    <a href="index.html#customShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Custom Shop</a>
-    <a href="#calendar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Calendar</a>
-    <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide md-hide-large md-hide-medium">
+    <a href="#lessons" class="w3-bar-item w3-button" onclick="toggleFunction()">Lessons</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Events</a>
+    <a href="#calendar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Studio Info</a>
+    <a href="#customShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Custom Shop</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
   </div>
 </div>
-
-
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
@@ -65,12 +80,8 @@
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+    <a href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
   </div>
 </footer>
  
