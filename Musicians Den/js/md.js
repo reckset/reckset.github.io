@@ -58,18 +58,29 @@ function toggleFunction() {
 }
     
 // Tabbed Lesson plan menu   
+// function openMenu(evt, menuName) {
+//     var i, x, tablinks;
+//     x = document.getElementsByClassName("menu");
+//     for (i = 0; i < x.length; i++) {
+//         x[i].style.display = "none";
+//     }
+//     tablinks = document.getElementsByClassName("tablink");
+//     for (i = 0; i < x.length; i++) {
+//         tablinks[i].className = tablinks[i].className.replace(" md-purple", "");
+//     }
+//     document.getElementById(menuName).style.display = "block";
+//     evt.currentTarget.firstElementChild.className += " md-purple";
+// }
+
 function openMenu(evt, menuName) {
-    var i, x, tablinks;
+    var i, x;
     x = document.getElementsByClassName("menu");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" md-purple", "");
-    }
+
     document.getElementById(menuName).style.display = "block";
-    evt.currentTarget.firstElementChild.className += " md-purple";
+    
 }
 
 // Make lesson Tier 1 the default selected menu item when page loads

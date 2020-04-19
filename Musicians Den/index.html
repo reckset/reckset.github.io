@@ -39,9 +39,9 @@
     <div class="lessonsDropdown md-hide-small md-hide-medium" id="myDropdownMenu">
       <button class="w3-button">Lessons</button>
       <div class="lessonsDropdown-content">
-        <a href="#lessons">Guitar</a>
-        <a href="#lessons">Vocal</a>
-        <a href="#lessons">Combo</a>
+        <a href="#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
+        <a href="#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
+        <a href="#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
       </div>
     </div>
 
@@ -64,9 +64,9 @@
     <div class="lessonsDropdown md-hide-small md-hide-large">
       <button class="w3-button">Lessons</button>
       <div class="lessonsDropdown-content">
-        <a href="#lessons">Guitar</a>
-        <a href="#lessons">Vocal</a>
-        <a href="#lessons">Combo</a>
+        <a href="#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
+        <a href="#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
+        <a href="#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
       </div>
     </div>
 
@@ -95,46 +95,7 @@
   </div>
 </div>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center"><i class="fas fa-user"></i> ABOUT US</h3>
-  <p class="w3-center"><em>We love music</em></p>
-  <p>Music has always been our passion. After touring and performing across the United States, and recording 2 studio albums we found ourselves settled down in Castle Rock, Colorado working in the corporate world to raise our family. In 2018 we took a leap of faith
-      and decided to re-focus on music. Instead of touring and performing, we found our passion in teaching and sharing our love of music with our students. Just as important as learning about music, we want our students to learn about the joy of performing music for others.
-      We do this by offering multiple performance opportunities each year, and since we have both vocal and guitar students, there are always opportunities to perform with other live musicians.
-  </p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Charlene</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Charlene" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Here is where Charlene can tell her story...
-        I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-  </div>
-
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Greg</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Greg" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Here is where Greg can tell his story...
-        I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
+<!-- Removing Stats, just leaving markup for now in case it's useful for other content
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">30+</span><br>
@@ -153,6 +114,12 @@
     Live Performances
   </div>
 </div>
+-->
+
+<!-- Simple vision statement -->
+<div class="w3-content w3-container w3-padding-32">
+  <h3 class="w3-center">Building community through music with private & group music lessons</h3>
+</div>
 
 <!-- Lessons Container -->
 <div class="w3-container w3-padding-64" id="lessons">
@@ -161,70 +128,86 @@
     <h3 class="w3-center"><i class="fas fa-graduation-cap"></i> LESSONS</h3>
     <p class="w3-center"><em>Learn about our unique approach to the right lesson plan for you</em></p>
     <!--<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">LESSONS</h1>-->
+
+    <!-- Lessons menu, text based
     <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Tier1');" id="defaultLesson">
-        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Tier 1</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Guitar');" id="defaultLesson">
+        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Guitar</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Tier2');">
-        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Tier 2</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Vocal');">
+        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Vocal</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Tier3');">
-        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Tier 3</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Combo');">
+        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Combo</div>
       </a>
     </div>
+    end of lessons menu text based option -->
 
-    <div id="Tier1" class="w3-container menu w3-padding-32 w3-white">
+    <!-- Lessons Menu with images rather than text -->
+    <div class="w3-row w3-row-padding w3-center" id="menu">
+      <!-- Guitar -->
+      <div class="w3-col s4">
+        <img src="images/evh.jpg" style="width:100%" onclick="openMenu(event, 'Guitar');" class="w3-hover-opacity" alt="Guitar Lessons" id="defaultLesson">
+      </div>
+
+      <!-- Vocal -->
+      <div class="w3-col s4">
+        <img src="images/taylor-swift.jpg" style="width:100%" onclick="openMenu(event, 'Vocal');" class="w3-hover-opacity" alt="Vocal">
+      </div>
+  
+      <!-- Combo -->
+      <div class="w3-col s4">
+        <img src="images/chris-stapleton.jpg" style="width:100%" onclick="openMenu(event, 'Combo');" class="w3-hover-opacity" alt="Combo">
+      </div>
+  
+    </div>
+    <!-- end of lessons menu -->
+
+
+    <div id="Guitar" class="w3-container menu w3-padding-32 w3-white">
       <p>
-        Explain Tier 1 lesson approach. Each Tier has its own "menu" content for pricing descriptions, and anything else
-        to help explain Tier 1!
+        Guitar lessons are available for all levels of students. Whether you are looking to learn more about guitar theory, song structure, performing, or wanting to learn some of your favorite songs, Greg will customize your lesson plan to help you achieve your guitar goals.
       </p>
-      <h3><b>Individual monthly</b> <span class="w3-right w3-tag md-purple w3-round">$000.00</span></h3>
-      <p class="w3-text-grey">Individuals in Tier 1 will experience this type of lesson...</p>
+      <p>
+        Both in studio and virtual lessons are available.
+      </p>
       <hr>
-   
-      <h3><b>Family monthly</b> <span class="w3-right w3-tag md-purple w3-round">$000.00</span></h3>
-      <p class="w3-text-grey">Family for Tier 1 is 2 students from the same family...</p>
+      <p class="w3-center"><a href="calendar.html">Learn more about guitar lesson pricing</a></p>
       <hr>
     </div>
 
-    <div id="Tier2" class="w3-container menu w3-padding-32 w3-white">
+    <div id="Vocal" class="w3-container menu w3-padding-32 w3-white">
       <p>
-        Explain Tier 2 lesson approach. Each Tier has its own "menu" content for pricing descriptions, and anything else
-        to help explain Tier 2!
+        Voice lessons are available for all levels of students. Charlene's approach will help you learn more about music as a whole, song structure, and how to use your voice as a musical instrument.
       </p>
-      <h3><b>Individual monthly</b> <span class="w3-right w3-tag md-purple w3-round">$000.00</span></h3>
-      <p class="w3-text-grey">Individuals in Tier 2 will experience this type of lesson...</p>
+      <p>
+        Both in studio and virtual lessons are available.
+      </p>
       <hr>
-   
-      <h3><b>Family monthly</b> <span class="w3-right w3-tag md-purple w3-round">$000.00</span></h3>
-      <p class="w3-text-grey">Family for Tier 2 is 2 students from the same family...note this will require individual lessons for each student to be scheduled.</p>
+      <p class="w3-center"><a href="calendar.html">Learn more about vocal lesson pricing</a></p>
       <hr>
     </div>
 
-    <div id="Tier3" class="w3-container menu w3-padding-32 w3-white">
+    <div id="Combo" class="w3-container menu w3-padding-32 w3-white">
       <p>
-        Explain Tier 3 lesson approach. Each Tier has its own "menu" content for pricing descriptions, and anything else
-        to help explain Tier 3!
+        For students looking to combine both guitar playing and singing, Greg and Charlene offer lesson plans that combine their experience an knowledge, bringing you teh best of both worlds!
       </p>
-      <!--<h3><b>Individual monthly</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$125.00</span></h3>-->
-      <h3><b>Individual monthly</b> <span class="w3-right w3-tag md-purple w3-round">$000.00</span></h3>
-      <p class="w3-text-grey">Individuals in Tier 3 will experience this type of lesson...</p>
+      <p>
+        Both in studio and virtual lessons are available.
+      </p>
       <hr>
-   
-      <h3><b>Family monthly</b> <span class="w3-right w3-tag md-purple w3-round">$000.00</span></h3>
-      <p class="w3-text-grey">Family for Tier 3 is 2 students from the same family...note this will require individual lessons for each student to be scheduled.</p>
+      <p class="w3-center"><a href="calendar.html">Learn more about combo lesson pricing</a></p>
       <hr>
     </div><br>
 
   </div>
 </div>
+<!-- End of Lessons section-->
 
-<!-- End of Menu section-->
-
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Second Parallax Image with Events Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    <span class="w3-xxlarge w3-text-white w3-wide">EVENTS</span>
   </div>
 </div>
 
@@ -350,6 +333,46 @@
 
   </div>
 </div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center"><i class="fas fa-user"></i> ABOUT US</h3>
+  <p class="w3-center"><em>We love music</em></p>
+  <p>Music has always been our passion. After touring and performing across the United States, and recording 2 studio albums we found ourselves settled down in Castle Rock, Colorado working in the corporate world to raise our family. In 2018 we took a leap of faith
+      and decided to re-focus on music. Instead of touring and performing, we found our passion in teaching and sharing our love of music with our students. Just as important as learning about music, we want our students to learn about the joy of performing music for others.
+      We do this by offering multiple performance opportunities each year, and since we have both vocal and guitar students, there are always opportunities to perform with other live musicians.
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Charlene</b></p><br>
+      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Charlene" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Here is where Charlene can tell her story...
+        I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Greg</b></p><br>
+      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Greg" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Here is where Greg can tell his story...
+        I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div> <!-- end About Us -->
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
