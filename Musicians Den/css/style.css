@@ -115,8 +115,8 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
   /*background-image: url('/w3images/parallax1.jpg');*/
-  background-image: url('../images/sample-header.jpg');
-  min-height: 100%;
+  background-image: url('../images/banner.jpg');
+  min-height: 85%;
 }
 
 /* Second image (Portfolio) */
