@@ -16,7 +16,7 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
+  <div class="w3-bar" id="mdNavbar">
     <!-- Contact information and Social Media on the right side of Navbar for large screens -->
     <a class="w3-bar-item w3-right md-hide-small md-hide-medium" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
     <a class="w3-bar-item w3-right md-hide-small md-hide-medium" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
@@ -33,88 +33,116 @@
 
     <!-- Navigation links -->
     <a href="index.html#home" class="w3-bar-item w3-button md-hide-small md-hide-medium">Home</a>
-    <a href="#lessons" class="w3-bar-item w3-button md-hide-small md-hide-medium">Lessons</a>
-    <a href="#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-medium">Events</a>
+
+    <!-- Dropdown menu for Lessons nav item -->
+    <div class="lessonsDropdown md-hide-small md-hide-medium" id="myDropdownMenu">
+      <button class="w3-button">Lessons</button>
+      <div class="lessonsDropdown-content">
+        <a href="index.html#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
+        <a href="index.html#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
+        <a href="index.html#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
+      </div>
+    </div>
+
+    <a href="index.html#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-medium">Events</a>
     <a href="calendar.html" class="w3-bar-item w3-button md-hide-small md-hide-medium">Studio Info</a>
-    <a href="#customShop" class="w3-bar-item w3-button md-hide-small md-hide-medium">Custom Shop</a>
-    <a href="#about" class="w3-bar-item w3-button md-hide-small md-hide-medium">About Us</a>
-    <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-medium">Contact</a>
+    <a href="index.html#customShop" class="w3-bar-item w3-button md-hide-small md-hide-medium">Custom Shop</a>
+    <a href="index.html#about" class="w3-bar-item w3-button md-hide-small md-hide-medium">About Us</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button md-hide-small md-hide-medium">Contact</a>
   </div>
 
   <!-- Navbar on medium screens -->
-  <div class="w3-bar" id="myMediumNavbar">
+  <div class="w3-bar" id="mdMediumNavbar">
     <a class="w3-bar-item w3-button w3-hover-black md-hide-medium md-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fas fa-bars"></i>
     </a>
     <!-- Home button stays on in small mode as well -->
     <a href="index.html#home" class="w3-bar-item w3-button md-hide-large">Home</a>
-    <a href="#lessons" class="w3-bar-item w3-button md-hide-small md-hide-large">Lessons</a>
-    <a href="#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-large">Events</a>
+
+    <!-- Dropdown menu for Lessons nav item -->
+    <div class="lessonsDropdown md-hide-small md-hide-large">
+      <button class="w3-button">Lessons</button>
+      <div class="lessonsDropdown-content">
+        <a href="index.html#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
+        <a href="index.html#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
+        <a href="index.html#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
+      </div>
+    </div>
+
+    <a href="index.html#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-large">Events</a>
     <a href="calendar.html" class="w3-bar-item w3-button md-hide-small md-hide-large">Studio Info</a>
-    <a href="#customShop" class="w3-bar-item w3-button md-hide-small md-hide-large">Custom Shop</a>
-    <a href="#about" class="w3-bar-item w3-button md-hide-small md-hide-large">About Us</a>
-    <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-large">Contact</a>
+    <a href="index.html#customShop" class="w3-bar-item w3-button md-hide-small md-hide-large">Custom Shop</a>
+    <a href="index.html#about" class="w3-bar-item w3-button md-hide-small md-hide-large">About Us</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button md-hide-small md-hide-large">Contact</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide md-hide-large md-hide-medium">
-    <a href="#lessons" class="w3-bar-item w3-button" onclick="toggleFunction()">Lessons</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Events</a>
+    <a href="index.html#lessons" class="w3-bar-item w3-button" onclick="toggleFunction()">Lessons</a>
+    <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Events</a>
     <a href="#calendar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Studio Info</a>
-    <a href="#customShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Custom Shop</a>
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+    <a href="index.html#customShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Custom Shop</a>
+    <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
   </div>
 </div>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">CALENDAR</h3>
+<!-- Container (Calendar) -->
+<div class="w3-content w3-container w3-padding-64" id="calendar">
+  <h3 class="w3-center">STUDIO CALENDAR</h3>
   <p class="w3-center"><em>Stay up to date with what's going on at Musician's Den</em></p>
   <p>
     We can place a calendar here...idea would be to make it easy so you guys can add/modify events. Website hosting services often provide integrated calendars...
   </p>
 </div>
 
+<!-- Parallax Image with Housekeeping Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">HOUSEKEEPING</span>
+  </div>
+</div>
+
+<!-- Housekeeping and Policies -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">OUR MUSICAL MISSION</h3>
+  <p class="w3-center">
+    We are Greg and Charlene Johnson. We teach our students the language of music.
+    We believe all humans are musical. Our studio has a positive, encouraging and fun environment.
+    We inspire students to find their own voices and be original artists. We tailor the curriculum
+    to match our students’ individual learning needs and goals. We want our studio to be a welcoming,
+    safe space for students and families. We are so honored to teach the gift of music and strive to
+    create a musical community for all of us.
+  </p>
+  <p class="w3-center"><em>Feel free to review some of our policies and details to make sure The Musician's Den is a comfortable fit for you.</em></p><br /><br />
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <a href="">Student & Family Expectations</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="">Tuition & Semester Pricing</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="">Canceled & Missed Lessons</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="">Virtual Lessons</a>
+    </div>
+  </div>
+</div>
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#calendar" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <a href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
     <a href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
   </div>
 </footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
 
 </body>
 </html>
