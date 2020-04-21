@@ -306,8 +306,38 @@
 <!-- Container (Testimonial Section) -->
 <div class="w3-content w3-container w3-padding-64" id="testimonials">
   <h3 class="w3-center">TESTIMONIALS</h3>
-  <p class="w3-center"><em>Read what some of our students have to say</em></p>
-  <p>"I have been playing the guitar for over 25 years. Greg was able to connect to my goals and focus on areas that I want to improve in, and I notice progress every week!" - Tim R.</p>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+    <div class="mySlides">
+      <q>My 13 year old has been taking acoustic guitar lessons with Greg for 11 months. I am amazed at how much she has learned and grown over that time.</q>
+      <p class="author">- Jenifer F.</p>
+    </div>
+
+    <div class="mySlides">
+      <q>Greg is a phenominal teacher. He is intuitive, soulful and knows how to meet his student exactly where they are on the learning curve. He is a natural, and I would recommend him to anyone--any age and any skill level.</q>
+      <p class="author">- Lisa G.</p>
+    </div>
+
+    <div class="mySlides">
+      <q>I have been playing the guitar for over 25 years. Greg was able to connect to my goals and focus on areas that I want to improve in, and I notice progress every week!</q>
+      <p class="author">- Tim R.</p>
+    </div>
+
+    <!-- Next/prev buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots/bullets/indicators -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
 </div>
 
 <!-- Container (Custom Shop Section) -->
@@ -426,6 +456,34 @@
 <script>
   // Activate defaultLesson when page loads
   document.getElementById("defaultLesson").click();
+
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
 </script>
 
 </body>
