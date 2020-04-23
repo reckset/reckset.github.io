@@ -148,19 +148,19 @@
     <div class="w3-row w3-row-padding w3-center" id="menu">
       <!-- Guitar -->
       <div class="w3-col s4">
-        <img src="images/lessons-guitar.png" style="width:75%" onclick="openMenu(event, 'Guitar');" class="w3-hover-opacity" alt="Guitar Lessons" id="defaultLesson"><br>
+        <img src="images/lessons-guitar.png" style="width:60%" onclick="openMenu(event, 'Guitar');" class="w3-hover-opacity" alt="Guitar Lessons" id="defaultLesson"><br>
         Guitar
       </div>
 
       <!-- Vocal -->
       <div class="w3-col s4">
-        <img src="images/lessons-vocal.png" style="width:75%" onclick="openMenu(event, 'Vocal');" class="w3-hover-opacity" alt="Vocal Lessons"><br>
+        <img src="images/lessons-vocal.png" style="width:60%" onclick="openMenu(event, 'Vocal');" class="w3-hover-opacity" alt="Vocal Lessons"><br>
         Vocal
       </div>
   
       <!-- Combo -->
       <div class="w3-col s4">
-        <img src="images/lessons-combo.png" style="width:75%" onclick="openMenu(event, 'Combo');" class="w3-hover-opacity" alt="Combo (Guitar & Vocal) Lessons"><br>
+        <img src="images/lessons-combo.png" style="width:60%" onclick="openMenu(event, 'Combo');" class="w3-hover-opacity" alt="Combo (Guitar & Vocal) Lessons"><br>
         Combo
       </div>
   
@@ -364,10 +364,16 @@
   </div>
 </div>
 
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="about">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">ABOUT</span>
+  </div>
+</div>
+
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT US</h3>
-  <p class="w3-center"><em>We love music</em></p>
+<div class="w3-content w3-container w3-padding-64">
+  <p class="w3-center"><em>Our Story</em></p>
   <p>Music has always been our passion. After touring and performing across the United States, and recording 2 studio albums we found ourselves settled down in Castle Rock, Colorado working in the corporate world to raise our family. In 2018 we took a leap of faith
       and decided to re-focus on music. Instead of touring and performing, we found our passion in teaching and sharing our love of music with our students. Just as important as learning about music, we want our students to learn about the joy of performing music for others.
       We do this by offering multiple performance opportunities each year, and since we have both vocal and guitar students, there are always opportunities to perform with other live musicians.
@@ -404,14 +410,9 @@
   </div>
 </div> <!-- end About Us -->
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
 
-<!-- Container (Contact Section) -->
+
+<!-- Container (Contact Section)
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">WHERE IS MUSICIAN'S DEN</h3>
   <p class="w3-center"><em>We'd love your feedback!</em></p>
@@ -426,6 +427,7 @@
         <i class="fas fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 555.555.5555<br>
         <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
       </div>
+      
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
@@ -437,15 +439,15 @@
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
         <button class="w3-button w3-padding-large w3-light-grey w3-right" style="margin-top:64px" type="submit">Send Message</button>
-        <!--<button class="w3-button md-purple w3-right w3-section" type="submit">-->
-          <!--<i class="fa fa-paper-plane"></i> SEND MESSAGE-->
         </button>
       </form>
+      
     </div>
   </div>
 </div>
+-->
 
-<!-- Footer -->
+<!-- Original Footer
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
@@ -453,6 +455,80 @@
     <a href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
   </div>
 </footer>
+-->
+
+
+<footer class="footer" id="contact">
+  <div class="footer__addr">
+    <h1 class="footer__logo">The Musician's Den</h1>
+        
+    <h2>Contact Us</h2>
+    
+    <address>
+      Castle Rock, CO 80109<br>
+      303.555.5555<br>
+      <a class="footer__btn" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Social</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+          <a href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+        </li>
+
+      </ul>
+    </li>
+    
+      <!--<li class="nav__item nav__item--extra">-->
+      <li class="nav__item">
+      <h2 class="nav__title">Lessons</h2>
+      
+      <!--<ul class="nav__ul nav__ul--extra">-->
+      <ul class="nav__ul">
+        <li>
+          <a href="#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
+        </li>
+        
+        <li>
+          <a href="#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
+        </li>
+        
+        <li>
+          <a href="#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Information</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="calendar.html">Calendar</a>
+        </li>
+        
+        <li>
+          <a href="calendar.html">Studio Policies</a>
+        </li>
+        
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2020 The Musician's Den</p>
+    <div class="legal__links">
+      <span>Building community through music</span>
+    </div>
+  </div>
+</footer>
+
+
 
 <script>
   // Activate defaultLesson when page loads
