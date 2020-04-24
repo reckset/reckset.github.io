@@ -27,7 +27,7 @@
 
     <!-- Contact information and Social Media for small and medium screens -->
     <ul class="md-hide-large" id="mdMediumNavbarCentered">
-      <li<span class="md-hide-large" style="font-size: small; padding: 10px 16px;">555.555.5555</span></li>
+      <li><span class="md-hide-large" style="font-size: small; padding: 10px 16px;">555.555.5555</span></li>
       <li><a class="md-hide-large" style="font-size: small; padding: 10px 16px;" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email</a></li>
       <li><span class="md-hide-large" style="font-size: small; padding: 10px 16px;">Castle Rock, CO</span></li>
       <li><a class="md-hide-large" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a></li>
@@ -38,7 +38,7 @@
 
     <!-- Dropdown menu for Lessons nav item -->
     <div class="lessonsDropdown md-hide-small md-hide-medium" id="myDropdownMenu">
-      <button class="w3-button">Lessons</button>
+      <a href="#lessons"><button class="w3-button">Lessons</button></a>
       <div class="lessonsDropdown-content">
         <a href="#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
         <a href="#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
@@ -47,7 +47,16 @@
     </div>
 
     <a href="#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-medium">Events</a>
-    <a href="calendar.html" class="w3-bar-item w3-button md-hide-small md-hide-medium">Studio Info</a>
+    
+    <!-- Dropdown menu for Studio Info nav item -->
+    <div class="lessonsDropdown md-hide-small md-hide-medium">
+      <a href="calendar.html"><button class="w3-button">Studio Info</button></a>
+      <div class="lessonsDropdown-content">
+        <a href="calendar.html#calendar" onclick="openMenu(event, 'Guitar');">Calendar</a>
+        <a href="calendar.html#policies" onclick="openMenu(event, 'Vocal');">Policies</a>
+      </div>
+    </div>
+
     <a href="#customShop" class="w3-bar-item w3-button md-hide-small md-hide-medium">Custom Shop</a>
     <a href="#about" class="w3-bar-item w3-button md-hide-small md-hide-medium">About Us</a>
     <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-medium">Contact</a>
@@ -63,7 +72,7 @@
 
     <!-- Dropdown menu for Lessons nav item -->
     <div class="lessonsDropdown md-hide-small md-hide-large">
-      <button class="w3-button">Lessons</button>
+      <a href="#lessons"><button class="w3-button">Lessons</button></a>
       <div class="lessonsDropdown-content">
         <a href="#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
         <a href="#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
@@ -72,7 +81,16 @@
     </div>
 
     <a href="#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-large">Events</a>
-    <a href="calendar.html" class="w3-bar-item w3-button md-hide-small md-hide-large">Studio Info</a>
+
+    <!-- Dropdown menu for Studio Info nav item -->
+    <div class="lessonsDropdown md-hide-small md-hide-large">
+      <a href="calendar.html"><button class="w3-button">Studio Info</button></a>
+      <div class="lessonsDropdown-content">
+        <a href="calendar.html#calendar" onclick="openMenu(event, 'Guitar');">Calendar</a>
+        <a href="calendar.html#policies" onclick="openMenu(event, 'Vocal');">Policies</a>
+      </div>
+    </div>
+
     <a href="#customShop" class="w3-bar-item w3-button md-hide-small md-hide-large">Custom Shop</a>
     <a href="#about" class="w3-bar-item w3-button md-hide-small md-hide-large">About Us</a>
     <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-large">Contact</a>
@@ -554,8 +572,6 @@
     </div>
   </div>
 </footer>
-
-
 
 <script>
   // Activate defaultLesson when page loads
