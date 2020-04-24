@@ -25,18 +25,19 @@
     <span class="w3-bar-item w3-right md-hide-small md-hide-medium" style="font-size: small; padding: 10px 16px;">555.555.5555</span>
 
     <!-- Contact information and Social Media for small and medium screens -->
-    <a class="w3-bar-item w3-right md-hide-large" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
-    <a class="w3-bar-item w3-right md-hide-large" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
-    <span class="w3-bar-item w3-right md-hide-large" style="font-size: small; padding: 10px 16px;">Castle Rock, CO</span>
-    <a class="w3-bar-item w3-right md-hide-large" style="font-size: small; padding: 10px 16px;" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email</a>
-    <span class="w3-bar-item w3-right md-hide-large" style="font-size: small; padding: 10px 16px;">555.555.5555</span>
-
+    <ul class="md-hide-large" id="mdMediumNavbarCentered">
+      <li><span class="md-hide-large" style="font-size: small; padding: 10px 16px;">555.555.5555</span></li>
+      <li><a class="md-hide-large" style="font-size: small; padding: 10px 16px;" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email</a></li>
+      <li><span class="md-hide-large" style="font-size: small; padding: 10px 16px;">Castle Rock, CO</span></li>
+      <li><a class="md-hide-large" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a></li>
+      <li><a class="md-hide-large" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a></li>
+    </ul>
     <!-- Navigation links -->
     <a href="index.html#home" class="w3-bar-item w3-button md-hide-small md-hide-medium">Home</a>
 
     <!-- Dropdown menu for Lessons nav item -->
     <div class="lessonsDropdown md-hide-small md-hide-medium" id="myDropdownMenu">
-      <button class="w3-button">Lessons</button>
+      <a href="index.html#lessons"><button class="w3-button">Lessons</button></a>
       <div class="lessonsDropdown-content">
         <a href="index.html#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
         <a href="index.html#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
@@ -45,10 +46,19 @@
     </div>
 
     <a href="index.html#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-medium">Events</a>
-    <a href="calendar.html" class="w3-bar-item w3-button md-hide-small md-hide-medium">Studio Info</a>
+    
+    <!-- Dropdown menu for Studio Info nav item -->
+    <div class="lessonsDropdown md-hide-small md-hide-medium">
+      <a href="calendar.html"><button class="w3-button">Studio Info</button></a>
+      <div class="lessonsDropdown-content">
+        <a href="calendar.html#calendar" onclick="openMenu(event, 'Guitar');">Calendar</a>
+        <a href="calendar.html#policies" onclick="openMenu(event, 'Vocal');">Policies</a>
+      </div>
+    </div>
+
     <a href="index.html#customShop" class="w3-bar-item w3-button md-hide-small md-hide-medium">Custom Shop</a>
     <a href="index.html#about" class="w3-bar-item w3-button md-hide-small md-hide-medium">About Us</a>
-    <a href="index.html#contact" class="w3-bar-item w3-button md-hide-small md-hide-medium">Contact</a>
+    <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-medium">Contact</a>
   </div>
 
   <!-- Navbar on medium screens -->
@@ -61,7 +71,7 @@
 
     <!-- Dropdown menu for Lessons nav item -->
     <div class="lessonsDropdown md-hide-small md-hide-large">
-      <button class="w3-button">Lessons</button>
+      <a href="index.html#lessons"><button class="w3-button">Lessons</button></a>
       <div class="lessonsDropdown-content">
         <a href="index.html#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
         <a href="index.html#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
@@ -70,10 +80,19 @@
     </div>
 
     <a href="index.html#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-large">Events</a>
-    <a href="calendar.html" class="w3-bar-item w3-button md-hide-small md-hide-large">Studio Info</a>
+    
+    <!-- Dropdown menu for Studio Info nav item -->
+    <div class="lessonsDropdown md-hide-small md-hide-large">
+      <a href="calendar.html"><button class="w3-button">Studio Info</button></a>
+      <div class="lessonsDropdown-content">
+        <a href="calendar.html#calendar" onclick="openMenu(event, 'Guitar');">Calendar</a>
+        <a href="calendar.html#policies" onclick="openMenu(event, 'Vocal');">Policies</a>
+      </div>
+    </div>
+
     <a href="index.html#customShop" class="w3-bar-item w3-button md-hide-small md-hide-large">Custom Shop</a>
     <a href="index.html#about" class="w3-bar-item w3-button md-hide-small md-hide-large">About Us</a>
-    <a href="index.html#contact" class="w3-bar-item w3-button md-hide-small md-hide-large">Contact</a>
+    <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-large">Contact</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -83,7 +102,7 @@
     <a href="#calendar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Studio Info</a>
     <a href="index.html#customShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Custom Shop</a>
     <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
-    <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
   </div>
 </div>
 
@@ -104,7 +123,7 @@
 </div>
 
 <!-- Housekeeping and Policies -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
+<div class="w3-content w3-container w3-padding-64" id="policies">
   <h3 class="w3-center">OUR MUSICAL MISSION</h3>
   <p class="w3-center">
     We are Greg and Charlene Johnson. We teach our students the language of music.
@@ -136,11 +155,73 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#calendar" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
-    <a href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+<footer class="footer" id="contact">
+  <div class="footer__addr">
+    <h1 class="footer__logo">The Musician's Den</h1>
+        
+    <h2>Contact Us</h2>
+    
+    <address>
+      Castle Rock, CO 80109<br>
+      303.555.5555<br>
+      <a class="footer__btn" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Social</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+          <a href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+        </li>
+
+      </ul>
+    </li>
+    
+      <!--<li class="nav__item nav__item--extra">-->
+      <li class="nav__item">
+      <h2 class="nav__title">Lessons</h2>
+      
+      <!--<ul class="nav__ul nav__ul--extra">-->
+      <ul class="nav__ul">
+        <li>
+          <a href="index.html#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
+        </li>
+        
+        <li>
+          <a href="index.html#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
+        </li>
+        
+        <li>
+          <a href="index.html#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Information</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="calendar.html">Calendar</a>
+        </li>
+        
+        <li>
+          <a href="calendar.html">Studio Policies</a>
+        </li>
+        
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2020 The Musician's Den</p>
+    <div class="legal__links">
+      <span>Building community through music</span>
+    </div>
   </div>
 </footer>
 
