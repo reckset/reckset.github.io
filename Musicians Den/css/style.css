@@ -152,6 +152,14 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
+.md-opacity {
+  opacity:0.60;
+}
+
+.md-opacity-off,.md-hover-opacity-off:hover {
+  opacity:1
+}
+
 /* Turn off parallax scrolling for tablets and phones. 1600px was too wide, is 749px too narrow? Test more... */
 @media only screen and (max-device-width: 768px) { /* part of parallax branch changes this was 749 */
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -163,6 +171,11 @@ body, html {
 
 /* Adding beyond W3 template */
 .md-purple, .md-hover-purple:hover{color:#fff!important;background-color:#A569BD!important}
+
+.md-selected-lesson {
+  color: black!important;
+  text-decoration: underline;
+}
 
 .vocal-students {
   background-image: url("../images/the-den.png");

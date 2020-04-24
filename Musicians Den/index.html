@@ -147,22 +147,49 @@
     <!-- Lessons Menu with images rather than text -->
     <div class="w3-row w3-row-padding w3-center" id="menu">
       <!-- Guitar -->
+      <!--
       <div class="w3-col s4">
-        <img src="images/lessons-guitar.png" style="width:60%" onclick="openMenu(event, 'Guitar');" class="w3-hover-opacity" alt="Guitar Lessons" id="defaultLesson"><br>
+        <img src="images/lessons-guitar.png" style="width:60%" onclick="openMenu(event, 'Guitar');" class="w3-hover-opacity menulink" alt="Guitar Lessons" id="defaultLesson"><br>
         Guitar
       </div>
+    -->
+
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Guitar');" id="defaultLesson">
+        <div class="w3-col s4 menulink">
+        <img src="images/lessons-guitar.png" style="width:60%" class="w3-hover-opacity" alt="Guitar Lessons"><br>
+        Guitar
+      </div>
+      </a>
 
       <!-- Vocal -->
+      <!--
       <div class="w3-col s4">
-        <img src="images/lessons-vocal.png" style="width:60%" onclick="openMenu(event, 'Vocal');" class="w3-hover-opacity" alt="Vocal Lessons"><br>
+        <img src="images/lessons-vocal.png" style="width:60%" onclick="openMenu(event, 'Vocal');" class="w3-hover-opacity menulink" alt="Vocal Lessons"><br>
         Vocal
       </div>
+    -->
+
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Vocal');" id="defaultLesson">
+      <div class="w3-col s4 menulink">
+      <img src="images/lessons-vocal.png" style="width:60%" class="w3-hover-opacity" alt="Vocal Lessons"><br>
+      Vocal
+    </div>
+    </a>
   
       <!-- Combo -->
+      <!--
       <div class="w3-col s4">
-        <img src="images/lessons-combo.png" style="width:60%" onclick="openMenu(event, 'Combo');" class="w3-hover-opacity" alt="Combo (Guitar & Vocal) Lessons"><br>
+        <img src="images/lessons-combo.png" style="width:60%" onclick="openMenu(event, 'Combo');" class="w3-hover-opacity menulink" alt="Combo (Guitar & Vocal) Lessons"><br>
         Combo
       </div>
+    -->
+
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Combo');" id="defaultLesson">
+      <div class="w3-col s4 menulink">
+      <img src="images/lessons-combo.png" style="width:60%" class="w3-hover-opacity" alt="Combo (Guitar & Vocal) Lessons"><br>
+      Combo
+    </div>
+    </a>
   
     </div>
     <!-- end of lessons menu -->
