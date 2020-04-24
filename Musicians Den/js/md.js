@@ -73,14 +73,18 @@ function toggleFunction() {
 // }
 
 function openMenu(evt, menuName) {
-    var i, x;
+    var i, x, menulinks;
     x = document.getElementsByClassName("menu");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
+    menulinks = document.getElementsByClassName("menulink");
+    for (i = 0; i < x.length; i++) {
+        menulinks[i].className = menulinks[i].className.replace(" md-selected-lesson", "");
+    }
 
     document.getElementById(menuName).style.display = "block";
-    
+    evt.currentTarget.firstElementChild.className += " md-selected-lesson";
 }
 
 // Make lesson Tier 1 the default selected menu item when page loads
