@@ -43,6 +43,7 @@
         <a href="#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
         <a href="#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
         <a href="#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
+        <a href="#lessons" onclick="openMenu(event, 'Online');">Online</a>
       </div>
     </div>
 
@@ -77,6 +78,7 @@
         <a href="#lessons" onclick="openMenu(event, 'Guitar');">Guitar</a>
         <a href="#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
         <a href="#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
+        <a href="#lessons" onclick="openMenu(event, 'Online');">Online</a>
       </div>
     </div>
 
@@ -114,27 +116,6 @@
   </div>
 </div>
 
-<!-- Removing Stats, just leaving markup for now in case it's useful for other content
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">30+</span><br>
-    Vocal Students
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">30+</span><br>
-    Guitar Students
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">60+</span><br>
-    Happy Musicians
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">4</span><br>
-    Live Performances
-  </div>
-</div>
--->
-
 <!-- Simple vision statement -->
 <div class="w3-content w3-container w3-padding-32">
   <h3 class="w3-center">BUILDING COMMUNITY THROUGH MUSIC...</h3>
@@ -149,77 +130,47 @@
     <p class="w3-center"><em>Our lesson plans can be flexible and customized to help you reach your goals.</em></p>
     <!--<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">LESSONS</h1>-->
 
-    <!-- Lessons menu, text based
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Guitar');" id="defaultLesson">
-        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Guitar</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Vocal');">
-        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Vocal</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Combo');">
-        <div class="w3-col s4 tablink w3-padding-large md-hover-purple">Combo</div>
-      </a>
-    </div>
-    end of lessons menu text based option -->
-
     <!-- Lessons Menu with images rather than text -->
     <div class="w3-row w3-row-padding w3-center" id="menu">
-      <!-- Guitar -->
-      <!--
-      <div class="w3-col s4">
-        <img src="images/lessons-guitar.png" style="width:60%" onclick="openMenu(event, 'Guitar');" class="w3-hover-opacity menulink" alt="Guitar Lessons" id="defaultLesson"><br>
-        Guitar
-      </div>
-    -->
 
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Guitar');" id="defaultLesson">
-        <div class="w3-col s4 menulink">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Guitar');" id="guitarLesson">
+        <div class="w3-col m3 menulink">
         <img src="images/lessons-guitar.png" style="width:60%" class="w3-hover-opacity" alt="Guitar Lessons"><br>
         Guitar
       </div>
       </a>
 
-      <!-- Vocal -->
-      <!--
-      <div class="w3-col s4">
-        <img src="images/lessons-vocal.png" style="width:60%" onclick="openMenu(event, 'Vocal');" class="w3-hover-opacity menulink" alt="Vocal Lessons"><br>
-        Vocal
-      </div>
-    -->
-
-    <a href="javascript:void(0)" onclick="openMenu(event, 'Vocal');" id="defaultLesson">
-      <div class="w3-col s4 menulink">
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Vocal');" id="vocalLesson">
+      <div class="w3-col m3 menulink">
       <img src="images/lessons-vocal.png" style="width:60%" class="w3-hover-opacity" alt="Vocal Lessons"><br>
       Vocal
     </div>
     </a>
-  
-      <!-- Combo -->
-      <!--
-      <div class="w3-col s4">
-        <img src="images/lessons-combo.png" style="width:60%" onclick="openMenu(event, 'Combo');" class="w3-hover-opacity menulink" alt="Combo (Guitar & Vocal) Lessons"><br>
-        Combo
-      </div>
-    -->
 
-    <a href="javascript:void(0)" onclick="openMenu(event, 'Combo');" id="defaultLesson">
-      <div class="w3-col s4 menulink">
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Combo');" id="comboLesson">
+      <div class="w3-col m3 menulink">
       <img src="images/lessons-combo.png" style="width:60%" class="w3-hover-opacity" alt="Combo (Guitar & Vocal) Lessons"><br>
       Combo
+    </div>
+    </a>
+
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Online');" id="onlineLesson">
+      <div class="w3-col m3 menulink">
+      <img src="images/lessons-online.png" style="width:60%" class="w3-hover-opacity" alt="Virtual Lessons"><br>
+      Online
     </div>
     </a>
   
     </div>
     <!-- end of lessons menu -->
 
-
+    <!-- Selected lesson content -->
     <div id="Guitar" class="w3-container menu w3-padding-32 w3-white">
       <p>
         Guitar lessons are available for all levels of students. Whether you are looking to learn more about guitar theory, song structure, performing, or wanting to learn some of your favorite songs, Greg will customize your lesson plan to help you achieve your guitar goals.
       </p>
       <p>
-        Both in studio and virtual lessons are available.
+        Both in studio and online lessons are available.
       </p>
       <hr>
       <p class="w3-center"><a href="calendar.html">Learn more about guitar lesson pricing</a></p>
@@ -231,7 +182,7 @@
         Voice lessons are available for all levels of students. Charlene's approach will help you learn more about music as a whole, song structure, and how to use your voice as a musical instrument.
       </p>
       <p>
-        Both in studio and virtual lessons are available.
+        Both in studio and online lessons are available.
       </p>
       <hr>
       <p class="w3-center"><a href="calendar.html">Learn more about vocal lesson pricing</a></p>
@@ -246,6 +197,15 @@
       <p class="w3-center"><a href="calendar.html">Learn more about combo lesson pricing</a></p>
       <hr>
     </div><br>
+
+    <div id="Online" class="w3-container menu w3-padding-32 w3-white">
+      <p>
+        Online lessons are available for both guitar and vocal lessons.
+      </p>
+      <hr>
+      <p class="w3-center"><a href="calendar.html">Learn more about online lesson pricing</a></p>
+      <hr>
+    </div>
 
   </div>
 </div>
@@ -459,54 +419,6 @@
   </div>
 </div> <!-- end About Us -->
 
-
-
-<!-- Container (Contact Section)
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE IS MUSICIAN'S DEN</h3>
-  <p class="w3-center"><em>We'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="images/the-den.png" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fas fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Castle Rock, Colorado<br>
-        <i class="fas fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 555.555.5555<br>
-        <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-padding-large w3-light-grey w3-right" style="margin-top:64px" type="submit">Send Message</button>
-        </button>
-      </form>
-      
-    </div>
-  </div>
-</div>
--->
-
-<!-- Original Footer
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
-    <a href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
-  </div>
-</footer>
--->
-
-
 <footer class="footer" id="contact">
   <div class="footer__addr">
     <h1 class="footer__logo">The Musician's Den</h1>
@@ -550,6 +462,10 @@
         <li>
           <a href="#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
         </li>
+
+        <li>
+          <a href="#lessons" onclick="openMenu(event, 'Online');">Online</a>
+        </li>
       </ul>
     </li>
     
@@ -579,7 +495,7 @@
 
 <script>
   // Activate defaultLesson when page loads
-  document.getElementById("defaultLesson").click();
+  document.getElementById("guitarLesson").click();
 
   var slideIndex = 1;
 showSlides(slideIndex);
