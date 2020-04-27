@@ -164,6 +164,15 @@ body, html {
   opacity:1
 }
 
+.menutext {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menuimage {
+  opacity:0.60;
+}
+
 /* Turn off parallax scrolling for tablets and phones. 1600px was too wide, is 749px too narrow? Test more... */
 @media only screen and (max-device-width: 768px) { /* part of parallax branch changes this was 749 */
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -176,9 +185,13 @@ body, html {
 /* Adding beyond W3 template */
 .md-purple, .md-hover-purple:hover{color:#fff!important;background-color:#A569BD!important}
 
-.md-selected-lesson {
+.md-selected-lesson-text {
   color: black!important;
   text-decoration: underline;
+}
+
+.md-selected-lesson-image {
+  opacity: 1!important;
 }
 
 .vocal-students {
