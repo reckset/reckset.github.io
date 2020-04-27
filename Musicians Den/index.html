@@ -133,31 +133,31 @@
     <!-- Lessons Menu with images rather than text -->
     <div class="w3-row w3-row-padding w3-center" id="menu">
 
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Guitar');" id="guitarLesson">
-        <div class="w3-col m3 menulink">
-        <img src="images/lessons-guitar.png" style="width:60%" class="w3-hover-opacity" alt="Guitar Lessons"><br>
-        Guitar
-      </div>
-      </a>
-
-    <a href="javascript:void(0)" onclick="openMenu(event, 'Vocal');" id="vocalLesson">
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Guitar', 'guitarLessonText', 'guitarLessonImage');" id="guitarLesson">
       <div class="w3-col m3 menulink">
-      <img src="images/lessons-vocal.png" style="width:60%" class="w3-hover-opacity" alt="Vocal Lessons"><br>
-      Vocal
+      <img src="images/lessons-guitar.png" style="width:60%" class="w3-hover-opacity menuimage" id="guitarLessonImage" alt="Guitar Lessons"><br>
+      <span class="menutext" id="guitarLessonText">Guitar</span>
     </div>
     </a>
 
-    <a href="javascript:void(0)" onclick="openMenu(event, 'Combo');" id="comboLesson">
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');" id="vocalLesson">
       <div class="w3-col m3 menulink">
-      <img src="images/lessons-combo.png" style="width:60%" class="w3-hover-opacity" alt="Combo (Guitar & Vocal) Lessons"><br>
-      Combo
+      <img src="images/lessons-vocal.png" style="width:60%" class="w3-hover-opacity menuimage" id="vocalLessonImage" alt="Vocal Lessons"><br>
+      <span class="menutext" id="vocalLessonText">Vocal</span>
     </div>
     </a>
 
-    <a href="javascript:void(0)" onclick="openMenu(event, 'Online');" id="onlineLesson">
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');" id="comboLesson">
       <div class="w3-col m3 menulink">
-      <img src="images/lessons-online.png" style="width:60%" class="w3-hover-opacity" alt="Virtual Lessons"><br>
-      Online
+      <img src="images/lessons-combo.png" style="width:60%" class="w3-hover-opacity menuimage" id="comboLessonImage" alt="Combo (Guitar & Vocal) Lessons"><br>
+      <span class="menutext" id="comboLessonText">Combo</span>
+    </div>
+    </a>
+
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Online', 'onlineLessonText', 'onlineLessonImage');" id="onlineLesson">
+      <div class="w3-col m3 menulink">
+      <img src="images/lessons-online.png" style="width:60%" class="w3-hover-opacity menuimage" id="onlineLessonImage" alt="Virtual Lessons"><br>
+      <span class="menutext" id="onlineLessonText">Online</span>
     </div>
     </a>
   

@@ -72,19 +72,35 @@ function toggleFunction() {
 //     evt.currentTarget.firstElementChild.className += " md-purple";
 // }
 
-function openMenu(evt, menuName) {
-    var i, x, menulinks;
+function openMenu(evt, menuName, menuText, menuImage) {
+    var i, x, menutexts, menuimages;
+    // loop through each element of menu class and toggle off display
     x = document.getElementsByClassName("menu");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    menulinks = document.getElementsByClassName("menulink");
-    for (i = 0; i < x.length; i++) {
-        menulinks[i].className = menulinks[i].className.replace(" md-selected-lesson", "");
+
+    // loop through each element of menutext class and remove text decoration
+    menutexts = document.getElementsByClassName("menutext");
+    for (i = 0; i < menutexts.length; i++) {
+        menutexts[i].className = menutexts[i].className.replace(" md-selected-lesson-text", "");
     }
 
+    // loop through each element of menuimage class and toggle opacity
+    menuimages = document.getElementsByClassName("menuimage");
+    for (i = 0; i < menuimages.length; i++) {
+        menuimages[i].className = menuimages[i].className.replace(" md-selected-lesson-image", "");
+    }
+
+    // now toggle the display on for the content that should be displayed based on menu selection
     document.getElementById(menuName).style.display = "block";
-    evt.currentTarget.firstElementChild.className += " md-selected-lesson";
+
+    // set the clicked link to indicate it is currently selected
+    //evt.currentTarget.firstElementChild.className += " md-selected-lesson-text";
+    document.getElementById(menuText).className += " md-selected-lesson-text";
+
+    // turn opacity off for the selected menu
+    document.getElementById(menuImage).className += " md-selected-lesson-image";
 }
 
 // Make lesson Tier 1 the default selected menu item when page loads
