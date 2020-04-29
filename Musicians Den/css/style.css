@@ -114,6 +114,14 @@ body, html {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .lessonsDropdown:hover .dropButton {background-color: #3e8e41;}
 
+.md-display-middle {
+  position:absolute;
+  top:87%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%)
+}
+
 .vision-text {
   font-family:Lato,sans-serif;
 }
