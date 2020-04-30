@@ -37,8 +37,8 @@
       <a href="#lessons"><button class="w3-button">Lessons</button></a>
       <div class="lessonsDropdown-content">
         <a href="#lessons" onclick="openMenu(event, 'Guitar', 'guitarLessonText', 'guitarLessonImage');">Guitar</a>
-        <a href="#lessons" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');">Vocal</a>
-        <a href="#lessons" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');">Combo</a>
+        <a href="#lessons" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');">Voice</a>
+        <a href="#lessons" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');">Voice/Guitar</a>
         <a href="#lessons" onclick="openMenu(event, 'Online', 'onlineLessonText', 'onlineLessonImage');">Online</a>
       </div>
     </div>
@@ -47,10 +47,10 @@
     
     <!-- Dropdown menu for Studio Info nav item -->
     <div class="lessonsDropdown">
-      <a href="#contact"><button class="w3-button">Studio Info</button></a>
+      <a href="#policies"><button class="w3-button">Studio Info</button></a>
       <div class="lessonsDropdown-content">
-        <a href="" onclick="openMenu(event, 'Guitar');">Calendar</a>
-        <a href="#contact" onclick="openMenu(event, 'Vocal');">Policies</a>
+        <a href="#policies" onclick="openMenu(event, 'Guitar');">Calendar</a>
+        <a href="#policies" onclick="openMenu(event, 'Vocal');">Policies</a>
       </div>
     </div>
 
@@ -68,11 +68,11 @@
     <a href="index.html#home" class="md-medium-bar-item w3-button">Home</a>
 
     <div class="lessonsDropdown">
-      <a href="#lessons"><button class="w3-button">Lessons</button></a>
+      <a href="#lessons"><button class="w3-button" style="padding:8px 10px; font-size: 98%;">Lessons</button></a>
       <div class="lessonsDropdown-content">
         <a href="#lessons" onclick="openMenu(event, 'Guitar', 'guitarLessonText', 'guitarLessonImage');">Guitar</a>
-        <a href="#lessons" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');">Vocal</a>
-        <a href="#lessons" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');">Combo</a>
+        <a href="#lessons" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');">Voice</a>
+        <a href="#lessons" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');">Voice/Guitar</a>
         <a href="#lessons" onclick="openMenu(event, 'Online', 'onlineLessonText', 'onlineLessonImage');">Online</a>
       </div>
     </div>
@@ -80,9 +80,9 @@
     <a href="#portfolio" class="md-medium-bar-item w3-button">Events</a>
 
     <div class="lessonsDropdown">
-      <a href="#contact"><button class="w3-button">Studio Info</button></a>
+      <a href="#policies"><button class="w3-button" style="padding:8px 10px; font-size: 98%;">Studio Info</button></a>
       <div class="lessonsDropdown-content">
-        <a href="" onclick="openMenu(event, 'Guitar');">Calendar</a>
+        <a href="#contact" onclick="openMenu(event, 'Guitar');">Calendar</a>
         <a href="#contact" onclick="openMenu(event, 'Vocal');">Policies</a>
       </div>
     </div>
@@ -91,9 +91,6 @@
     <a href="#about" class="md-medium-bar-item w3-button">About Us</a>
     <a href="#contact" class="md-medium-bar-item w3-button">Contact</a>
   </div>
-
-
- 
 
   <!-- Navbar on small screens -->
   <div class="w3-bar md-hide-medium md-hide-large" id="mdSmallNavbar">
@@ -152,14 +149,14 @@
     <a href="javascript:void(0)" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');" id="vocalLesson">
       <div class="w3-col m3 menulink">
       <img src="images/lessons-vocal.png" style="width:60%" class="w3-hover-opacity menuimage" id="vocalLessonImage" alt="Vocal Lessons"><br>
-      <span class="menutext" id="vocalLessonText">Vocal</span>
+      <span class="menutext" id="vocalLessonText">Voice</span>
     </div>
     </a>
 
     <a href="javascript:void(0)" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');" id="comboLesson">
       <div class="w3-col m3 menulink">
       <img src="images/lessons-combo.png" style="width:60%" class="w3-hover-opacity menuimage" id="comboLessonImage" alt="Combo (Guitar & Vocal) Lessons"><br>
-      <span class="menutext" id="comboLessonText">Combo</span>
+      <span class="menutext" id="comboLessonText">Voice/Guitar</span>
     </div>
     </a>
 
@@ -385,7 +382,7 @@
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min" id="about">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">ABOUT</span>
+     <span class="w3-xxlarge w3-text-white w3-wide">ABOUT US</span>
   </div>
 </div>
 
@@ -432,16 +429,46 @@
   </div>
 </div> <!-- end About Us -->
 
+<!-- Parallax Image with Housekeeping Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">STUDIO INFO</span>
+  </div>
+</div>
+
+<!-- Housekeeping and Policies -->
+<div class="w3-content w3-container w3-padding-64" id="policies">
+  <p class="w3-center">
+    ...Display key dates here...
+  </p>
+  <p class="w3-center"><em>Feel free to review some of our policies and details to make sure The Musician's Den is a comfortable fit for you.</em></p><br /><br />
+
+  <div class="w3-row-padding w3-center">
+    <p class="w3-center"><em>Policies</em></p>
+    <div class="w3-col m3">
+      <a href="">Student & Family Expectations</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="">Tuition & Semester Pricing</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="">Canceled & Missed Lessons</a>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="">Online Lessons</a>
+    </div>
+  </div>
+</div>
+
 <footer class="footer" id="contact">
   <div class="footer__addr">
     <h1 class="footer__logo">The Musician's Den</h1>
-        
-    <h2>Contact Us</h2>
-    
     <address>
-      Castle Rock, CO 80109<br>
-      303.555.5555<br>
-      <a class="footer__btn" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email Us</a>
+      Castle Rock, CO<br>
+      <a class="footer__btn" href="mailto:admin@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email Us</a>
     </address>
   </div>
   
@@ -453,6 +480,7 @@
         <li>
           <a href="https://instagram.com/themusiciansdencr" style="padding:0px 0px 0px 0px; font-size: larger;" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
           <a href="https://www.facebook.com/themusiciansdenCR/" style="padding:0px 0px 0px 8px; font-size: larger;" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+          <a href="" style="padding:0px 0px 0px 8px; font-size: larger;"  target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
         </li>
 
       </ul>
@@ -469,11 +497,11 @@
         </li>
         
         <li>
-          <a href="#lessons" onclick="openMenu(event, 'Vocal');">Vocal</a>
+          <a href="#lessons" onclick="openMenu(event, 'Vocal');">Voice</a>
         </li>
         
         <li>
-          <a href="#lessons" onclick="openMenu(event, 'Combo');">Combo</a>
+          <a href="#lessons" onclick="openMenu(event, 'Combo');">Voice/Guitar</a>
         </li>
 
         <li>
@@ -481,7 +509,7 @@
         </li>
       </ul>
     </li>
-    
+  
     <li class="nav__item">
       <h2 class="nav__title">Information & Policies</h2>
       
@@ -490,23 +518,11 @@
           <a href="">Calendar</a>
         </li>
         <li>
-          <a href="">Student & Family Expectations</a>
-        </li>
-
-        <li>
-          <a href="">Tuition & Semester Pricing</a>
-        </li>
-
-        <li>
-          <a href="">Canceled & Missed Lessons</a>
-        </li>
-
-        <li>
-          <a href="">Virtual Lessons</a>
+          <a href="">Policies</a>
         </li>
       </ul>
     </li>
-
+  
   <!--
   <div class="legal">
     <p>&copy; 2020 The Musician's Den</p>
