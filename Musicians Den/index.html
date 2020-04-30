@@ -17,27 +17,23 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar" id="mdNavbar">
+  <div class="w3-bar md-hide-small md-hide-medium" id="mdNavbar">
     <!-- Contact information and Social Media on the right side of Navbar for large screens -->
-    <a class="w3-bar-item w3-right md-hide-small md-hide-medium" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
-    <a class="w3-bar-item w3-right md-hide-small md-hide-medium" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
-    <span class="w3-bar-item w3-right md-hide-small md-hide-medium" style="font-size: small; padding: 10px 16px;">Castle Rock, CO</span>
-    <a class="w3-bar-item w3-right md-hide-small md-hide-medium" style="font-size: small; padding: 10px 16px;" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email</a>
-    <span class="w3-bar-item w3-right md-hide-small md-hide-medium" style="font-size: small; padding: 10px 16px;">555.555.5555</span>
+    <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
+    <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+    <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
 
-    <!-- Contact information and Social Media for small and medium screens -->
+    <!-- Contact information and Social Media for small and medium screens
     <ul class="md-hide-large" id="mdMediumNavbarCentered">
-      <li><span class="md-hide-large" style="font-size: small; padding: 10px 16px;">555.555.5555</span></li>
-      <li><a class="md-hide-large" style="font-size: small; padding: 10px 16px;" href="mailto:charlene@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email</a></li>
-      <li><span class="md-hide-large" style="font-size: small; padding: 10px 16px;">Castle Rock, CO</span></li>
       <li><a class="md-hide-large" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a></li>
       <li><a class="md-hide-large" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a></li>
     </ul>
+  -->
     <!-- Navigation links -->
-    <a href="index.html#home" class="w3-bar-item w3-button md-hide-small md-hide-medium">Home</a>
+    <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
 
     <!-- Dropdown menu for Lessons nav item -->
-    <div class="lessonsDropdown md-hide-small md-hide-medium" id="myDropdownMenu">
+    <div class="lessonsDropdown" id="myDropdownMenu">
       <a href="#lessons"><button class="w3-button">Lessons</button></a>
       <div class="lessonsDropdown-content">
         <a href="#lessons" onclick="openMenu(event, 'Guitar', 'guitarLessonText', 'guitarLessonImage');">Guitar</a>
@@ -47,10 +43,10 @@
       </div>
     </div>
 
-    <a href="#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-medium">Events</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Events</a>
     
     <!-- Dropdown menu for Studio Info nav item -->
-    <div class="lessonsDropdown md-hide-small md-hide-medium">
+    <div class="lessonsDropdown">
       <a href="#contact"><button class="w3-button">Studio Info</button></a>
       <div class="lessonsDropdown-content">
         <a href="" onclick="openMenu(event, 'Guitar');">Calendar</a>
@@ -58,21 +54,20 @@
       </div>
     </div>
 
-    <a href="#guitarShop" class="w3-bar-item w3-button md-hide-small md-hide-medium">Guitar Shop</a>
-    <a href="#about" class="w3-bar-item w3-button md-hide-small md-hide-medium">About Us</a>
-    <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-medium">Contact</a>
+    <a href="#guitarShop" class="w3-bar-item w3-button">Guitar Shop</a>
+    <a href="#about" class="w3-bar-item w3-button">About Us</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
   </div>
 
   <!-- Navbar on medium screens -->
-  <div class="w3-bar" id="mdMediumNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black md-hide-medium md-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fas fa-bars"></i>
-    </a>
-    <!-- Home button stays on in small mode as well -->
-    <a href="index.html#home" class="w3-bar-item w3-button md-hide-large">Home</a>
+  <div class="w3-bar md-hide-small md-hide-large" id="mdMediumNavbar">
+    <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a></li>
+    <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a></li>
+    <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a></li>
+    
+    <a href="index.html#home" class="md-medium-bar-item w3-button">Home</a>
 
-    <!-- Dropdown menu for Lessons nav item -->
-    <div class="lessonsDropdown md-hide-small md-hide-large">
+    <div class="lessonsDropdown">
       <a href="#lessons"><button class="w3-button">Lessons</button></a>
       <div class="lessonsDropdown-content">
         <a href="#lessons" onclick="openMenu(event, 'Guitar', 'guitarLessonText', 'guitarLessonImage');">Guitar</a>
@@ -82,10 +77,9 @@
       </div>
     </div>
 
-    <a href="#portfolio" class="w3-bar-item w3-button md-hide-small md-hide-large">Events</a>
+    <a href="#portfolio" class="md-medium-bar-item w3-button">Events</a>
 
-    <!-- Dropdown menu for Studio Info nav item -->
-    <div class="lessonsDropdown md-hide-small md-hide-large">
+    <div class="lessonsDropdown">
       <a href="#contact"><button class="w3-button">Studio Info</button></a>
       <div class="lessonsDropdown-content">
         <a href="" onclick="openMenu(event, 'Guitar');">Calendar</a>
@@ -93,12 +87,26 @@
       </div>
     </div>
 
-    <a href="#guitarShop" class="w3-bar-item w3-button md-hide-small md-hide-large">Guitar Shop</a>
-    <a href="#about" class="w3-bar-item w3-button md-hide-small md-hide-large">About Us</a>
-    <a href="#contact" class="w3-bar-item w3-button md-hide-small md-hide-large">Contact</a>
+    <a href="#guitarShop" class="md-medium-bar-item w3-button">Guitar Shop</a>
+    <a href="#about" class="md-medium-bar-item w3-button">About Us</a>
+    <a href="#contact" class="md-medium-bar-item w3-button">Contact</a>
   </div>
 
+
+ 
+
   <!-- Navbar on small screens -->
+  <div class="w3-bar md-hide-medium md-hide-large" id="mdSmallNavbar">
+  <a class="w3-bar-item w3-button w3-hover-black w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <i class="fas fa-bars"></i>
+  </a>
+  <!-- Home button stays on in small mode as well -->
+  <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
+
+  <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+  <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+  <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
+
   <div id="navDemo" class="w3-bar-block w3-white w3-hide md-hide-large md-hide-medium">
     <a href="#lessons" class="w3-bar-item w3-button" onclick="toggleFunction()">Lessons</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Events</a>
@@ -106,6 +114,7 @@
     <a href="#guitarShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Guitar Shop</a>
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
   </div>
 </div>
 
