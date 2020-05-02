@@ -195,6 +195,10 @@ body, html {
   opacity:0.60;
 }
 
+.guitarShopMenuImage {
+  opacity:0.60;
+}
+
 /* Turn off parallax scrolling for tablets and phones. 1600px was too wide, is 749px too narrow? Test more... */
 @media only screen and (max-device-width: 768px) { /* part of parallax branch changes this was 749 */
   .bgimg-1, .bgimg-2, .bgimg-3 {
