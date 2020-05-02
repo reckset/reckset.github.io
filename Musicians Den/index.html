@@ -49,12 +49,20 @@
     <div class="lessonsDropdown">
       <a href="#policies"><button class="w3-button">Studio Info</button></a>
       <div class="lessonsDropdown-content">
-        <a href="#policies" onclick="openMenu(event, 'Guitar');">Calendar</a>
-        <a href="#policies" onclick="openMenu(event, 'Vocal');">Policies</a>
+        <a href="#policies">Calendar</a>
+        <a href="#policies">Policies</a>
       </div>
     </div>
 
-    <a href="#guitarShop" class="w3-bar-item w3-button">Guitar Shop</a>
+    <!-- Dropdown menu for Guitar Shop nav item -->
+    <div class="lessonsDropdown">
+      <a href="#guitarShop"><button class="w3-button">Guitar Shop</button></a>
+      <div class="lessonsDropdown-content">
+        <a href="#guitarShopMenu" onclick="openGuitarShopMenu(event, 'Inventory', 'inventoryText', 'inventoryImage');">Inventory</a>
+        <a href="#guitarShopMenu" onclick="openGuitarShopMenu(event, 'Services', 'servicesText', 'servicesImage');">Services</a>
+      </div>
+    </div>
+
     <a href="#about" class="w3-bar-item w3-button">About Us</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
   </div>
@@ -87,7 +95,15 @@
       </div>
     </div>
 
-    <a href="#guitarShop" class="md-medium-bar-item w3-button">Guitar Shop</a>
+    <!-- Dropdown menu for Guitar Shop nav item -->
+    <div class="lessonsDropdown">
+      <a href="#guitarShop"><button class="w3-button" style="padding:8px 10px; font-size: 98%;">Guitar Shop</button></a>
+      <div class="lessonsDropdown-content">
+        <a href="#guitarShopMenu" onclick="openGuitarShopMenu(event, 'Inventory', 'inventoryText', 'inventoryImage');">Inventory</a>
+        <a href="#guitarShopMenu" onclick="openGuitarShopMenu(event, 'Services', 'servicesText', 'servicesImage');">Services</a>
+      </div>
+    </div>
+
     <a href="#about" class="md-medium-bar-item w3-button">About Us</a>
     <a href="#contact" class="md-medium-bar-item w3-button">Contact</a>
   </div>
@@ -97,7 +113,7 @@
   <a class="w3-bar-item w3-button w3-hover-black w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
     <i class="fas fa-bars"></i>
   </a>
-  <!-- Home button stays on in small mode as well -->
+  
   <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
 
   <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
@@ -191,7 +207,7 @@
         Both in studio and online lessons are available.
       </p>
       <hr>
-      <p class="w3-center"><a href="calendar.html">Learn more about vocal lesson pricing</a></p>
+      <p class="w3-center"><a href="calendar.html">Learn more about voice lesson pricing</a></p>
       <hr>
     </div>
 
@@ -200,7 +216,7 @@
         For students looking to combine both guitar playing and singing, Greg and Charlene offer lesson plans that combine their experience an knowledge, bringing you teh best of both worlds!
       </p>
       <hr>
-      <p class="w3-center"><a href="calendar.html">Learn more about combo lesson pricing</a></p>
+      <p class="w3-center"><a href="calendar.html">Learn more about voice/guitar combo lesson pricing</a></p>
       <hr>
     </div><br>
 
@@ -352,7 +368,7 @@
 
 </div>
 
-<!-- Container (Custom Shop Section) -->
+<!-- Container (Guitar Shop Section) -->
 <div class="w3-content w3-container w3-padding-64" id="guitarShop">
   <h3 class="w3-center">GUITAR SHOP</h3>
   <p class="w3-center"><em>Awesome deals on instruments and repair</em></p>
@@ -378,6 +394,58 @@
 
   </div>
 </div>
+
+<!--<div class="w3-container w3-padding-64" id="lessons">-->
+  <!--<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">-->
+    <div class="w3-content">
+ 
+      <!-- Guitar Shop Menu -->
+      <div class="w3-row w3-row-padding w3-center" id="guitarShopMenu">
+
+      <div class="w3-col m3">
+        <p>&nbsp</p>
+      </div>
+  
+      <a href="javascript:void(0)" onclick="openGuitarShopMenu(event, 'Inventory', 'inventoryText', 'inventoryImage');" id="guitarInventory">
+        <div class="w3-col m3">
+        <img src="images/guitar-shop-inventory.png" style="width:60%" class="guitarShopMenuImage" id="inventoryImage" alt="Guitar Shop Inventory"><br>
+        <span class="guitarShopMenuText" id="inventoryText">Inventory</span>
+      </div>
+      </a>
+  
+      <a href="javascript:void(0)" onclick="openGuitarShopMenu(event, 'Services', 'servicesText', 'servicesImage');" id="guitarService">
+        <div class="w3-col m3">
+        <img src="images/guitar-shop-services.png" style="width:60%" class="guitarShopMenuImage" id="servicesImage" alt="Guitar Shop Services"><br>
+        <span class="guitarShopMenuText" id="servicesText">Services</span>
+      </div>
+      </a>
+
+      <div class="w3-col m3">
+        <p>&nbsp</p>
+      </div>
+    
+      </div>
+      <!-- end of Guitar Shop menu -->
+  
+      <!-- Selected Guitar Shop content -->
+      <div id="Inventory" class="w3-container guitarShopMenu w3-padding-32 w3-white">
+        <p>
+          Inventory can be described here, maybe some pictures of current (or past) inventory?
+        </p>
+        <p>
+          Add pricing information?
+        </p>
+      </div>
+  
+      <div id="Services" class="w3-container guitarShopMenu w3-padding-32 w3-white">
+        <p>
+          Services can be described here, maybe a menu?
+        </p>
+      </div>
+  
+    </div>
+  <!--</div>-->
+  <!-- End of Guitar Shop section-->
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min" id="about">
@@ -536,6 +604,9 @@
 <script>
   // Activate defaultLesson when page loads
   document.getElementById("guitarLesson").click();
+
+  // Activate Guitar Shop Inventory section when page loads
+  document.getElementById("guitarInventory").click();
 
   var slideIndex = 1;
 showSlides(slideIndex);
