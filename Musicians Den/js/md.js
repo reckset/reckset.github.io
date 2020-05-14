@@ -7,7 +7,7 @@
 // This function will dynamically account for additional images added on teh home page as long as the images are assocaited to the md-thumbnail class
 // This function does use JQuery
 $(function () {
-    $(".md-thumbnail").slice(0, 8).show();
+    $(".md-thumbnail").slice(0, 12).show();
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
         $(".md-thumbnail:hidden").slice(0, 4).slideDown();
