@@ -3402,6 +3402,20 @@ select.input-border {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Sub menu hover bug fix. Provided by ABC 2020.07.06 */
+@media (min-width: 1025px) {
+  #main-menu .sub {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  #main-menu .parent:hover > .sub {
+    display: block !important;
+  }
+}
+/* End 2020.07.06 fix */
+
 /*	#MEGAMENU
 ============================================================*/
 #main-menu .navbar .nav .parent.megamenu {
