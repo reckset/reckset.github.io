@@ -1,4 +1,28 @@
+.header.aqua-header.mobile-no-transparent {
+  background: #5097ac;
+}
+
+/*  Pencil 9 bg's */
+.australian-aqua-bg {
+  background-color: #5097ac;
+}
+
 .footer-text{
     font-size:11px;
-    color:#7e8082;
+    /*color:#7e8082;*/
+    color: rgba(255,255,255, .7);
   }
+
+.p9-section-title {
+  font-weight:bold !important;
+  color: #5097ac;
+}
+
+/*Pencil 9 - change color of button */
+.button.aqua {
+  color: rgba(255,255,255, .7);
+  background-color: #5097ac;
+}
+.button.aqua:hover {
+	color: rgba(255,255,255, 1.0);
+}

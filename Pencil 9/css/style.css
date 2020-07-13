@@ -6,6 +6,15 @@ Author: Abcgomel
 Site: https://themeforest.net/user/abcgomel/portfolio
 -------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------
+Project:      Pencil 9
+Version:      1.0
+Last change:  2020.07.12
+Author:       Tim Reckseen
+
+For Pencil 9 changes search for Pencil 9 in the comments near each change
+-------------------------------------------------------------------*/
+
 /*    GLOBAL STYLES
 ===================================================================*/
 /*=== CONTENT OF CSS FILE =========================================
@@ -706,7 +715,9 @@ support for no js
 	position:relative;
 }
 .dark-bg {
-  background:#303236;
+  /* Pencil 9 - changed color to Australian Aqua
+  background:#303236;*/
+  background: #5097ac;
 }
 .tp-banner-fullscreen-container {
 	width:100%;
@@ -1029,7 +1040,8 @@ support for no js
 	width:133px;
 	z-index:1;
 }
-.header-transporent-bg-black{
+/* Pencil 9 - typo below, was transporant */
+.header-transparent-bg-black{
   background:#303236;
 }
 
@@ -1160,7 +1172,9 @@ support for no js
   position: absolute;
   top: 7px;
   left: 0;
-  color: #4b4e53;
+  /* Pencil 9 - change color
+  color: #4b4e53;*/
+  color: #5097ac;
   font-size: 45px;
 }
 .fes4-title-cont h3, .title-18 {
@@ -1177,8 +1191,10 @@ support for no js
 	font-weight:300;
 	font-size:30px;
 	line-height:36px;
-	color:#4b4e53; 
-  border-left:#4b4e53 2px solid;
+  color:#4b4e53;
+  /* Pencil 9 - changed line to Australian Aqua 
+  border-left:#4b4e53 2px solid;*/
+  border-left: #5097ac 2px solid;
 }
 .section-title-2 {
   margin:0;
@@ -1322,7 +1338,9 @@ support for no js
   position: absolute;
   top: 2px;
   left: 0;
-  color: #4b4e53;
+  /* Pencil 9 - change color of icon
+  color: #4b4e53;*/
+  color: #5097ac;
   font-size: 30px;
 }
 .fes7-box h3 {
@@ -1392,11 +1410,13 @@ support for no js
 	background-color:#eee;
 }
 .grey-dark-bg, .header.no-transparent .header-wrapper.grey-dark-bg{
-	background-color:#303236;
+  background-color:#303236;
+  /* Pencil 9 - staged change background-color: #5097ac;*/
 }
 .yellow-bg{
 	background-color:#ffea00 !important;
 }
+
 .font-black {
   color:#4b4e53 !important;
 }
@@ -3078,8 +3098,15 @@ select.input-border {
 }
 .footer-copy a{
   font-size:11px;
-  color:#7e8082;
+  /* Pencil 9 - change color
+  color:#7e8082;*/
+  color: rgba(255,255,255, .7);
 }
+/* Pencil 9 add hover color */
+.footer-copy a:hover {
+  color: rgba(255,255,255, 1.0);
+}
+
 .footer-soc-a a {
   font-size:16px;
   padding:12px;
@@ -3194,7 +3221,9 @@ select.input-border {
   z-index: 1;
 }
 #main-menu .navbar {
-  background: none;
+  /* Pencil 9 - change color to Australian Aqua
+  background: none;*/
+  background: #5097ac;
   border: 0 none;
   margin: 0;
 }
@@ -3402,7 +3431,7 @@ select.input-border {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Sub menu hover bug fix. Provided by ABC 2020.07.06 */
+/* Pencil 9 - Sub menu hover bug fix. Provided by ABC 2020.07.06 */
 @media (min-width: 1025px) {
   #main-menu .sub {
     display: none !important;
@@ -3762,7 +3791,9 @@ background:none;
 	box-shadow: 0 1px 15px rgba(0,0,0, .15);
 }
 .affix.black-header .header-wrapper {
-	background: #303236;
+  /* Pencil 9 - change background to Australian Aqua
+  background: #303236;*/
+  background: #5097ac;
 }
 #nav-below.header {
 	position:relative;
@@ -3781,8 +3812,9 @@ background:none;
 	background: #fff;
 }
 .container-m-30 {
+  /* Pencil 9 - removing margins to span navbar across entire browser
 	padding-right: 30px;
-	padding-left: 30px;
+	padding-left: 30px;*/
 	margin-right: auto;
 	margin-left: auto;
 	position:relative;
@@ -3862,8 +3894,10 @@ header.affix .logo .logo-img {
 	transition: all .4s ease 0s;
 }
 .logo-2 {
-	display: block;
-	padding:33px 0 25px 0;
+  display: block;
+  /*Pencil 9 - adjusted top padding for logo in navbar
+  padding:33px 0 25px 0;*/
+  padding:25px 0 25px 0;
 	-webkit-transition: all .4s ease 0s;
 	-o-transition: all .4s ease 0s;
 	transition: all .4s ease 0s;
@@ -5930,9 +5964,10 @@ button {
 	background-color:#4b4e53;
 }
 .button.gray {
-	color:#fff;
-	background-color:#535961;
+  color:#fff;
+  background-color:#535961;
 }
+
 .button.gray:hover {
 	background-color:#101010;
 }
@@ -7934,7 +7969,7 @@ h2.portfolio-timeline-title {
 	  top: 0;
 	}
 	.main-menu-container {
-		background-color: #4b4e53;
+    background-color: #4b4e53;
 	}
  	.header .logo, .header-maintenance .logo {
 		padding-top:21px;
@@ -7987,7 +8022,9 @@ h2.portfolio-timeline-title {
     margin-bottom:0px; 
   }
   .header.black-header.mobile-no-transparent {
-    background:#303236;
+    /* Pencil 9 - change color to Australian Aqua
+    background:#303236;*/
+    background: #5097ac;
   }
   .header .right-box-wrapper {
     text-align: right;
@@ -9443,7 +9480,7 @@ img.mfp-img {
     display: none;
     position: relative;
     margin: 0;
-    padding: 0;#header-left 
+    padding: 0;
     background: #3e4045;
     -webkit-box-shadow: none;
     box-shadow: none;
