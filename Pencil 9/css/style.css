@@ -780,6 +780,17 @@ support for no js
 .font-white, .font-white a{
   color:#fff !important;
 }
+
+/* Pencil 9 - adding larger font for title, also increase font-weight */
+.norm-100-wide{
+	font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+	font-size: 100px;
+	line-height: 100px;
+	font-weight: 400;
+  letter-spacing:24px;
+  color:#4b4e53;
+}
+
 .light-73-wide{
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
 	font-size: 73px;
@@ -788,6 +799,7 @@ support for no js
   letter-spacing:24px;
   color:#4b4e53;
 }
+
 .light-72-wide{
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
 	font-size: 72px;
@@ -873,6 +885,16 @@ support for no js
   letter-spacing:2px;
   color:#4b4e53;
 }
+/* Pencil 9 - Adding a larger regular font */
+.norm-32-wide{
+	font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+	font-size: 32px;
+	line-height: 32px;
+	font-weight: 400;
+  letter-spacing:3px;
+  color:#4b4e53;
+}
+
 .norm-16-wide{
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
 	font-size: 16px;
