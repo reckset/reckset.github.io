@@ -1168,15 +1168,27 @@ support for no js
   padding-left: 70px;
   padding-bottom: 15px;
 }
+/* Original styling
 .fes4-box-icon{
   position: absolute;
   top: 7px;
   left: 0;
-  /* Pencil 9 - change color
-  color: #4b4e53;*/
-  color: #5097ac;
+  color: #4b4e53;
   font-size: 45px;
 }
+*/
+
+/* Pencil 9 Override */
+.fes4-box-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 30px;
+  /*text-align: center;
+  vertical-align: middle;*/
+}
+
 .fes4-title-cont h3, .title-18 {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   color: #4b4e53;
@@ -1192,9 +1204,9 @@ support for no js
 	font-size:30px;
 	line-height:36px;
   color:#4b4e53;
-  /* Pencil 9 - changed line to Australian Aqua 
-  border-left:#4b4e53 2px solid;*/
-  border-left: #5097ac 2px solid;
+  border-left:#4b4e53 2px solid;
+  /* Pencil 9 - leaving border lines grey
+  border-left: #5097ac 2px solid;*/
 }
 .section-title-2 {
   margin:0;
@@ -1333,16 +1345,31 @@ support for no js
   position: relative;
   padding-left: 47px;
   padding-bottom: 10px;
+
 }
+
+/* Original
 .fes7-box-icon {
   position: absolute;
   top: 2px;
   left: 0;
-  /* Pencil 9 - change color of icon
-  color: #4b4e53;*/
-  color: #5097ac;
+  color: #4b4e53;
   font-size: 30px;
 }
+*/
+
+/* Pencil 9 Override */
+.fes7-box-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
 .fes7-box h3 {
   color: #4b4e53;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
