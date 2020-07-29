@@ -782,11 +782,29 @@ support for no js
 }
 
 /* Pencil 9 - adding larger font for title, also increase font-weight */
-.norm-100-wide{
+.norm-108-wide{
 	font-family: 'Open Sans',Arial,Helvetica,sans-serif;
-	font-size: 100px;
-	line-height: 100px;
+	font-size: 108px;
+	line-height: 108px;
 	font-weight: 400;
+  letter-spacing:24px;
+  color:#4b4e53;
+}
+/* Pencil 9 - adding larger font for title slides in Open Sans */
+.light-82-wide{
+	font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+	font-size: 82px;
+	line-height: 82px;
+	font-weight: 300;
+  letter-spacing:24px;
+  color:#4b4e53;
+}
+/* Pencil 9 - adding larger font for title slides in Open Sans */
+.light-74-wide{
+	font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+	font-size: 74px;
+	line-height: 74px;
+	font-weight: 300;
   letter-spacing:24px;
   color:#4b4e53;
 }
@@ -808,6 +826,7 @@ support for no js
   letter-spacing:25px;
   color:#4b4e53;
 }
+
 .light-70-wide{
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
 	font-size: 70px;
@@ -816,6 +835,7 @@ support for no js
   letter-spacing:24px;
   color:#4b4e53;
 }
+
 .light-69-wide{
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
 	font-size: 69px;
@@ -886,10 +906,10 @@ support for no js
   color:#4b4e53;
 }
 /* Pencil 9 - Adding a larger regular font */
-.norm-32-wide{
+.norm-36-wide{
 	font-family: 'Open Sans',Arial,Helvetica,sans-serif;
-	font-size: 32px;
-	line-height: 32px;
+	font-size: 36px;
+	line-height: 36px;
 	font-weight: 400;
   letter-spacing:3px;
   color:#4b4e53;
@@ -937,7 +957,7 @@ support for no js
 		-ms-transform: translateX(-50%) !important;
 		transform: translateX(-50%) !important;
 		-transform: translateZ(0);
-	}
+  }
 	.hide-0-736 {
 		display:none;
 		visibility: hidden;
@@ -976,6 +996,14 @@ support for no js
 		display:none !important;
 		visibility: hidden;
 	}
+}
+
+/*Pencil 9 - Hide software dev image at 767*/
+@media only screen and (max-width : 767px){
+  .hide-0-767 {
+    display: none !important;
+    visibility: hidden;
+  }
 }
 
 /*****  SLIDE 2   *****/
