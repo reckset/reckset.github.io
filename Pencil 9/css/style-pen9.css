@@ -2,6 +2,11 @@
   background: #5097ac;
 }
 
+.contact-form-cont a a:hover a:visited a:active {
+  color: #5097ac;
+  text-decoration: none;
+}
+
 /*  Pencil 9 bg's */
 .australian-aqua-bg {
   background-color: #5097ac;
