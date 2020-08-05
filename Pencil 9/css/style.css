@@ -2903,9 +2903,12 @@ table.shopping-cart-table tr th, table.shopping-cart-table tr td {
   margin-bottom:20px;
   font-size: 24px;
   line-height: 25px;
-  letter-spacing: 5px;
+  /* Pencil 9: decrease letter spacing
+  letter-spacing: 5px;*/
+  letter-spacing: 4px;
   font-weight: 400;
-  text-transform:uppercase;
+  /*Pencil 9: don't force uppercase
+  text-transform:uppercase;*/
 }
 .page-title-font-big {
   margin-bottom:0px;
@@ -4659,7 +4662,8 @@ blockquote.custom-blockquote:before {
 .blog-categories {
 	margin:0;
 	padding:0;
-	text-transform: uppercase;
+  /*Pencil 9: don't force uppercase
+  text-transform: uppercase;*/
 }
 .blog-categories li{
 	list-style: none;
@@ -4691,7 +4695,9 @@ blockquote.custom-blockquote:before {
 	transition: all .3s ease 0s;
 }
 .blog-categories li a:hover .blog-cat-icon{
-	background-color:#ffea00;
+  /* Pencil 9: change yellow highlight to aqua
+  /*background-color:#ffea00;*/
+  background-color:#5097ac;
 	height:48px;
 	width:48px;
 	line-height:46px;
@@ -4707,7 +4713,9 @@ blockquote.custom-blockquote:before {
 	transition: all .3s ease 0s;
 }
 .blog-categories li.current .blog-cat-icon{
-	background-color:#ffea00;
+  /* Pencil 9: change yellow highlight to aqua
+  background-color:#ffea00;*/
+  background-color:#5097ac;
 	height:48px;
 	width:48px;
 	line-height:46px;
