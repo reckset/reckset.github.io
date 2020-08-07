@@ -6,11 +6,23 @@
 
       <loc>https://www.pencil9.com/</loc>
 
-      <lastmod>2020-08-007</lastmod>
+      <lastmod>2020-08-07</lastmod>
 
       <changefreq>monthly</changefreq>
 
       <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.pencil9.com/privacy</loc>
+
+      <lastmod>2020-08-07</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.5</priority>
 
    </url>
 
