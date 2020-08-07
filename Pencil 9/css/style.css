@@ -3205,9 +3205,11 @@ select.input-border {
   font-size:11px;
   color:#7e8082;
 }
+
 .footer-2-copy:hover {
   color:#101010;
 }
+
 .footer-2-soc-a a {
   font-size:16px !important;
   padding:7px 11px !important;
@@ -4697,9 +4699,10 @@ blockquote.custom-blockquote:before {
 	transition: all .3s ease 0s;
 }
 .blog-categories li a:hover .blog-cat-icon{
-  /* Pencil 9: change yellow highlight to aqua
+  /* Pencil 9: change yellow highlight to aqua and arrow color to white
   /*background-color:#ffea00;*/
   background-color:#5097ac;
+  color: #ffffff;
 	height:48px;
 	width:48px;
 	line-height:46px;
@@ -4715,9 +4718,10 @@ blockquote.custom-blockquote:before {
 	transition: all .3s ease 0s;
 }
 .blog-categories li.current .blog-cat-icon{
-  /* Pencil 9: change yellow highlight to aqua
+  /* Pencil 9: change yellow highlight to aqua and arrow color to white
   background-color:#ffea00;*/
   background-color:#5097ac;
+  color: #ffffff;
 	height:48px;
 	width:48px;
 	line-height:46px;
