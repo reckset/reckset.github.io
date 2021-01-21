@@ -1143,7 +1143,8 @@ support for no js
 
 /* #FEATURES 2-3 #NEW
 =====================================================*/
-
+/*Pencil 9
+Made adjustments in this section to padding, font sizes*/
 @media only screen and (min-width: 992px) {
   .left-50{
     left:50%;
@@ -1154,8 +1155,9 @@ support for no js
 }
 .fes2-main-text-cont {
   margin: 0 auto;
-  padding: 145px 50px 140px 50px;
-  max-width:500px; 
+  /*padding: 145px 50px 140px 50px;*/
+  padding: 90px 25px 90px 25px;
+  /*max-width:500px;*/
 }
 .fes2-text-cont{
 	margin-top:30px;
@@ -1175,6 +1177,16 @@ support for no js
   background-repeat: no-repeat;
   background-position: center center;
 }
+/*Pencil 9: new size added to offer slightly smaller*/
+.title-fs-35 {
+	color:#4b4e53;
+	font-family: 'Lato',Arial,Helvetica,sans-serif;
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 300;
+}
+/*End Pencil 9*/
+
 .title-fs-45 {
 	color:#4b4e53;
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
@@ -1238,6 +1250,15 @@ support for no js
   /*text-align: center;
   vertical-align: middle;*/
 }
+
+.harmony-box-icon{
+  position: absolute;
+  top: 7px;
+  left: 0;
+  color: #4b4e53;
+  font-size: 45px;
+}
+/* End Pencil 9*/
 
 .fes4-title-cont h3, .title-18 {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
