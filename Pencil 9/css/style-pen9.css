@@ -66,10 +66,10 @@
 .harmony-btn {
   border: none;
   background-color: inherit;
-  padding: 14px 28px;
-  /*font-size: 16px;*/
+  padding: 0!important;
   cursor: pointer;
   display: inline-block;
+  color: #5097ac;
 }
 
 .harmony-btn:hover {background: #d3d3d3;} 

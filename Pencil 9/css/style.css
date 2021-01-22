@@ -1006,6 +1006,14 @@ support for no js
   }
 }
 
+/*Pencil 9 - Hide at 1025*/
+@media only screen and (max-width : 1025px){
+  .hide-0-1025 {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+
 /*****  SLIDE 2   *****/
 .tp-caption.dark-light-61 {
 	color:#4b4e53;
@@ -1143,8 +1151,7 @@ support for no js
 
 /* #FEATURES 2-3 #NEW
 =====================================================*/
-/*Pencil 9
-Made adjustments in this section to padding, font sizes*/
+
 @media only screen and (min-width: 992px) {
   .left-50{
     left:50%;
@@ -1156,14 +1163,15 @@ Made adjustments in this section to padding, font sizes*/
 .fes2-main-text-cont {
   margin: 0 auto;
   /*padding: 145px 50px 140px 50px;*/
-  padding: 90px 25px 90px 25px;
-  /*max-width:500px;*/
+  padding: 90px 0px 90px 0px;
+  max-width:500px;
 }
 .fes2-text-cont{
 	margin-top:30px;
 }
 .fes2-img {
-  background: url(../images/fes2.jpg) 50% 50% no-repeat;
+  /*background: url(../images/fes2.jpg) 50% 50% no-repeat;*/
+  background: url(../images/480x231.jpg) 50% 50% no-repeat;
   
   width: 100%;
   display: block;	
@@ -1177,7 +1185,15 @@ Made adjustments in this section to padding, font sizes*/
   background-repeat: no-repeat;
   background-position: center center;
 }
-/*Pencil 9: new size added to offer slightly smaller*/
+/*Pencil 9: new sizes added to offer slightly smaller*/
+.title-fs-25 {
+	color:#4b4e53;
+	font-family: 'Lato',Arial,Helvetica,sans-serif;
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: 300;
+}
+
 .title-fs-35 {
 	color:#4b4e53;
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
