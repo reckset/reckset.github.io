@@ -715,9 +715,9 @@ support for no js
 	position:relative;
 }
 .dark-bg {
-  /* Pencil 9 - changed color to Australian Aqua
-  background:#303236;*/
-  background: #5097ac;
+  /* Pencil 9 - changed color to Australian Aqua */
+  background:#303236;
+  /*background: #5097ac;*/
 }
 .tp-banner-fullscreen-container {
 	width:100%;
@@ -1247,32 +1247,37 @@ support for no js
   padding-bottom: 15px;
 }
 
-/* Original styling
+/* Original definition
 .fes4-box-icon{
   position: absolute;
   top: 7px;
   left: 0;
   color: #4b4e53;
   font-size: 45px;
-}
-*/
+}*/
 
-/* Pencil 9 Override */
+/* Pencil 9 Override for placing over circle icon defined in style-pen9.css
 .fes4-box-icon {
   position: absolute;
   top: 10px;
   left: 10px;
   color: rgba(255, 255, 255, 1);
   font-size: 30px;
-  /*text-align: center;
-  vertical-align: middle;*/
+}*/
+
+.fes4-box-icon{
+  position: absolute;
+  top: 7px;
+  left: 0;
+  color: #5097ac;
+  font-size: 30px;
 }
 
 .harmony-box-icon{
   position: absolute;
   top: 7px;
   left: 0;
-  color: #4b4e53;
+  color: #2d8e8e;
   font-size: 30px;
 }
 /* End Pencil 9*/
@@ -1446,7 +1451,7 @@ support for no js
 }
 */
 
-/* Pencil 9 Override */
+/* Pencil 9 Override to place over circle icons
 .fes7-box-icon {
   position: absolute;
   top: 8px;
@@ -1455,8 +1460,15 @@ support for no js
   font-size: 24px;
   text-align: center;
   vertical-align: middle;
-}
+}*/
 
+.fes7-box-icon {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  color: #5097ac;
+  font-size: 30px;
+}
 
 .fes7-box h3 {
   color: #4b4e53;
@@ -1526,7 +1538,8 @@ support for no js
 }
 .grey-dark-bg, .header.no-transparent .header-wrapper.grey-dark-bg{
   background-color:#303236;
-  /* Pencil 9 - staged change background-color: #5097ac;*/
+  /* Pencil 9 - staged change background-color: #5097ac;
+  25 Jan 2021 - changed back to dark grey */
 }
 .yellow-bg{
 	background-color:#ffea00 !important;
@@ -3344,8 +3357,9 @@ select.input-border {
 }
 #main-menu .navbar {
   /* Pencil 9 - change color to Australian Aqua
+  25 Jan 2021 - changed color to dark grey
   background: none;*/
-  background: #5097ac;
+  background: #303236;
   border: 0 none;
   margin: 0;
 }
@@ -3913,9 +3927,9 @@ background:none;
 	box-shadow: 0 1px 15px rgba(0,0,0, .15);
 }
 .affix.black-header .header-wrapper {
-  /* Pencil 9 - change background to Australian Aqua
-  background: #303236;*/
-  background: #5097ac;
+  /* Pencil 9 - change background to Australian Aqua*/
+  /*background: #5097ac;*/
+  background: #303236;
 }
 #nav-below.header {
 	position:relative;
@@ -8152,8 +8166,9 @@ h2.portfolio-timeline-title {
   }
   .header.black-header.mobile-no-transparent {
     /* Pencil 9 - change color to Australian Aqua
-    background:#303236;*/
-    background: #5097ac;
+    background: #5097ac;*/
+    background:#303236;
+
   }
   .header .right-box-wrapper {
     text-align: right;
