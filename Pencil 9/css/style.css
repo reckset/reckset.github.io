@@ -1166,6 +1166,12 @@ support for no js
   padding: 90px 0px 90px 0px;
   max-width:500px;
 }
+/* Pencil 9 - Harmony */
+.harmony-main-text-cont {
+  margin: 0 auto;
+  padding: 90px 0px 90px 0px;
+  max-width:500px;
+}
 .fes2-text-cont{
 	margin-top:30px;
 }
@@ -1189,11 +1195,11 @@ support for no js
 /*Pencil 9 harmony image definitions*/
 .harmony-img {
   background: url(../images/harmony.png) 50% 50% no-repeat;
-  
+
   width: 100%;
   display: block;
   position: relative;
-  background-size: cover;
+  /*background-size: cover;*/
      
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1209,7 +1215,7 @@ support for no js
   width: 100%;
   display: block;	
   position: relative;
-  background-size: cover;
+  /*background-size: cover;*/
      
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1225,7 +1231,7 @@ support for no js
   width: 100%;
   display: block;	
   position: relative;
-  background-size: cover;
+  /*background-size: cover;*/
      
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1241,7 +1247,7 @@ support for no js
   width: 100%;
   display: block;	
   position: relative;
-  background-size: cover;
+  /*background-size: cover;*/
      
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1412,6 +1418,13 @@ support for no js
   .p-140-cont{ padding-top:120px; padding-bottom:120px;}
 }
 
+@media only screen and (max-width: 991px) {
+    /* Pencil 9 - Harmony */
+    .harmony-main-text-cont{
+      padding:35px 30px 35px 30px;
+    }
+  }
+
 @media only screen and (max-width : 768px) {
   .container {
     padding-left:20px;
@@ -1454,10 +1467,14 @@ support for no js
 	}
 	.fes1-img-cont img{
 		height:250px;
-	}
+  }
 	.fes2-main-text-cont{
 		padding:70px 30px 70px 30px;
-	}
+  }
+  /* Pencil 9 - Harmony */
+  .harmony-main-text-cont{
+    padding:35px 30px 35px 30px;
+  }
 }
 
 @media only screen and (max-width : 480px) {
