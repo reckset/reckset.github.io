@@ -1185,6 +1185,73 @@ support for no js
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+/*Pencil 9 harmony image definitions*/
+.harmony-img {
+  background: url(../images/harmony.png) 50% 50% no-repeat;
+  
+  width: 100%;
+  display: block;
+  position: relative;
+  background-size: cover;
+     
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.harmony-01-img {
+  background: url(../images/harmony-01.png) 50% 50% no-repeat;
+  
+  width: 100%;
+  display: block;	
+  position: relative;
+  background-size: cover;
+     
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.harmony-02-img {
+  background: url(../images/harmony-02.png) 50% 50% no-repeat;
+  
+  width: 100%;
+  display: block;	
+  position: relative;
+  background-size: cover;
+     
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.harmony-03-img {
+  background: url(../images/harmony-03.png) 50% 50% no-repeat;
+  
+  width: 100%;
+  display: block;	
+  position: relative;
+  background-size: cover;
+     
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/************************************/
+
 /*Pencil 9: new sizes added to offer slightly smaller*/
 .title-fs-25 {
 	color:#4b4e53;
