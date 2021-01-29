@@ -1169,7 +1169,7 @@ support for no js
 /* Pencil 9 - Harmony */
 .harmony-main-text-cont {
   margin: 0 auto;
-  padding: 90px 0px 90px 0px;
+  padding: 50px 0px 50px 0px;
   max-width:500px;
 }
 .fes2-text-cont{
@@ -1194,7 +1194,7 @@ support for no js
 
 /*Pencil 9 harmony image definitions*/
 .harmony-img {
-  background: url(../images/harmony.png) 50% 50% no-repeat;
+  background: url(../images/harmony-main.png) 50% 50% no-repeat;
 
   width: 100%;
   display: block;
@@ -1210,7 +1210,7 @@ support for no js
 }
 
 .harmony-01-img {
-  background: url(../images/harmony-01.png) 50% 50% no-repeat;
+  background: url(../images/harmony-hiw-01.png) 50% 50% no-repeat;
   
   width: 100%;
   display: block;	
@@ -1226,7 +1226,7 @@ support for no js
 }
 
 .harmony-02-img {
-  background: url(../images/harmony-02.png) 50% 50% no-repeat;
+  background: url(../images/harmony-hiw-02.png) 50% 50% no-repeat;
   
   width: 100%;
   display: block;	
@@ -1242,7 +1242,7 @@ support for no js
 }
 
 .harmony-03-img {
-  background: url(../images/harmony-03.png) 50% 50% no-repeat;
+  background: url(../images/harmony-hiw-03.png) 50% 50% no-repeat;
   
   width: 100%;
   display: block;	
@@ -1350,7 +1350,7 @@ support for no js
   position: absolute;
   top: 7px;
   left: 0;
-  color: #2d8e8e;
+  color: #33bcba;
   font-size: 30px;
 }
 /* End Pencil 9*/
@@ -1473,7 +1473,7 @@ support for no js
   }
   /* Pencil 9 - Harmony */
   .harmony-main-text-cont{
-    padding:35px 30px 35px 30px;
+    padding:35px 30px 0px 30px;
   }
 }
 
@@ -3463,7 +3463,8 @@ select.input-border {
   z-index:5;
 }
 #main-menu .navbar .nav > li > a {
-  font-size:12px;
+  /*font-size:12px;*/
+  font-size: 14px;
   color:#5c6066;
   z-index: 1;
   text-shadow: none;
@@ -3591,7 +3592,8 @@ select.input-border {
   z-index: 905;
 }
 #main-menu .sub li {
-  font-size: 12px;
+  /*font-size: 12px;*/
+  font-size: 14px;
   line-height: 24px;
   /*text-transform:uppercase;*/
 }
@@ -3805,14 +3807,16 @@ background:none;
   -webkit-box-shadow: 0 0 5px rgba(0,0,0,.15);
   box-shadow: 0 0 5px rgba(0,0,0,.15);
   display: none;
-  font-size: 13px;
+  /*font-size: 13px;*/
+  font-size: 14px;
   line-height: 24px;
   padding: 15px 20px;
   position: absolute;
   z-index: 48;
 }
 .header .primary .sub li {
-  font-size: 13px;
+  /*font-size: 13px;*/
+  font-size: 14px;
   line-height: 24px;
 }
 .header .primary .parent:hover > .sub {
@@ -8303,7 +8307,8 @@ h2.portfolio-timeline-title {
     padding-top:10px;
   }
   #main-menu .navbar .nav li  a {
-    font-size:13px;
+    /*font-size:13px;*/
+    font-size:14px;
   }
   #main-menu .navbar .nav > li > a {
     font-weight: normal;
