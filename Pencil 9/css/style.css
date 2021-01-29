@@ -1353,6 +1353,10 @@ support for no js
   color: #33bcba;
   font-size: 30px;
 }
+
+.harmony-pricing-icon{
+  color: #33bcba;
+}
 /* End Pencil 9*/
 
 .fes4-title-cont h3, .title-18 {
@@ -1490,6 +1494,19 @@ support for no js
   font-size: 18px;
   margin-bottom: 7px;
   margin-top: 7px;
+}
+
+.harmony-overview h3 {
+  color: #4b4e53;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  /*font-weight: bold;*/
+  font-size: 24px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+.harmony-coming-soon{
+  font-size: 18px;
 }
 
 /* #FEATURES 6 #NEW
