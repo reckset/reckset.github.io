@@ -3593,7 +3593,7 @@ select.input-border {
 #main-menu .sub li {
   font-size: 12px;
   line-height: 24px;
-  text-transform:uppercase;
+  /*text-transform:uppercase;*/
 }
 /*****	#ANIMATION FOR SUB MENU	*****/
 #main-menu .parent:hover > .sub {	
@@ -4134,7 +4134,7 @@ header.affix .logo .logo-img {
 	border-radius: 0;
   font-weight: 300;
 	font-size:12px;
-	text-transform:uppercase;
+	/*text-transform:uppercase;*/
 	padding-top:2px;
 	padding-left:0;
 	margin-bottom: 0;
