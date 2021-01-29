@@ -1199,6 +1199,7 @@ support for no js
   width: 100%;
   display: block;
   position: relative;
+  object-fit: cover;
   /*background-size: cover;*/
      
   -webkit-box-sizing: border-box;
@@ -1249,6 +1250,7 @@ support for no js
   width: 100%;
   display: block;	
   position: relative;
+  object-fit: cover;
   /*background-size: cover;*/
      
   -webkit-box-sizing: border-box;
