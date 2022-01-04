@@ -35,6 +35,7 @@
     <a href="#calendar" class="w3-bar-item w3-button">Calendar</a>
     <a href="#guitarShop" class="w3-bar-item w3-button">Guitar Shop</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+
   </div>
 
   <!-- Navbar on medium screens -->
@@ -43,7 +44,7 @@
     <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a></li>
     
     <a href="index.html#home" class="md-medium-bar-item w3-button">Home</a>
-    <a href="#lessons" class="md-medium-bar-item w3-button">Lessons</a>
+    <a href="#lessons" class="md-medium-bar-item w3-button">Lessons & Classes</a>
     <a href="#about" class="md-medium-bar-item w3-button">About Us</a>
     <a href="#calendar" class="md-medium-bar-item w3-button">Calendar</a>
     <a href="#guitarShop" class="md-medium-bar-item w3-button">Guitar Shop</a>
@@ -220,7 +221,7 @@
     We inspire students to find their own voices and be original artists. We tailor the curriculum
     to match our students’ individual learning needs and goals. We want our studio to be a welcoming,
     safe space for students and families. We are so honored to teach the gift of music and strive to
-    create a musical community for all of us. Meet the team...<br /><br />
+    create a musical community for all of us.<br /><br />
   </p>
 
   <!-- photo of Charlene
@@ -270,6 +271,59 @@
   </div>
 </div>
 -->
+
+<!-- CALENDAR -->
+<div class="w3-content w3-container w3-padding-64" id="calendar">
+  <h3 class="w3-center">CALENDAR</h3>
+  <p class="w3-center"><em>2022 Spring Semester</em></p>
+
+  <div class="w3-row">
+
+    <div class="w3-col m6 w3-padding-large">
+      <h4>January 2022</h4>
+      <p>
+        1/4: Meet the new TMD Coaches open-house 5-6:30pm<br>
+        1/10: First day of spring semester private lessons begin<br>
+        1/17: Rock Bands begin this week<br>
+        1/24: Group classes begin this week
+      </p>
+      <h4>February 2022</h4>
+      <p>
+        2/13: Workshop ages 11/under 3-4pm<br>
+        2/13: Workshop ages 12+ 4:15-5:15pm
+      </p>
+      <h4>March 2022</h4>
+      <p>
+        3/6 Pizza Jam (instruments) ages 11/under 3-4pm<br>
+        3/6 Pizza Jam (instruments) ages 12+ 3:30-5pm<br>
+        3/14-20 Studio closed for Spring Break
+      </p>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h4>April 2022</h4>
+      <p>
+        4/10: PJ Pizza karaoke (singers) 3:30-5pm<br>
+        4/22: Friday Night Rock Band dress rehearsal 11/under 6pm, 12-teen 7pm (all students invited to watch)<br>
+        4/27: Wednesday Night Rockin' Dad Band dress rehearsal 7-8pm (all students invited to watch)<br>
+        4/29: Friday Night Rock Band showcases
+      </p>
+      <h4>May 2022</h4>
+      <p>
+        5/4: Wednesday Night Rockin' Dad Band showcase 7pm (local venue TBD)<br>
+        5/6: Friday Night Rock Bands movie night 6pm<br>
+        5/15: Spring concert (TBD) and last day of semester
+      </p>
+      <h4>June 2022</h4>
+      <p>
+        Summer classes/camps begin
+      </p>
+    </div>
+
+
+  </div>
+</div>
+<!-- END CALENDAR -->
 
 <!-- GUITAR SHOP -->
 <div class="w3-content w3-container w3-padding-64" id="guitarShop">
@@ -335,20 +389,18 @@
 </div>
 <!-- END TESTIMONIALS -->
 
-<div class="w3-container w3-padding-64" id="lessons">
-</div>
+
 
 </div>
 
 <footer class="footer" id="contact">
-  <div class="footer__addr">
+  <div class="footer__addr w3-center">
     <h1 class="footer__logo">The Musician's Den</h1>
-    <a href="documents/studio-policies.pdf" target="_blank">Studio Policies</a>
     <address>
       Castle Rock, CO<br>
-      <a class="footer__btn" href="mailto:admin@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email Us</a>
-      admin@themusiciansden.net<br>
+      <a class="w3-center" href="mailto:admin@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">admin@themusiciansden.net</a>
     </address>
+    <a href="documents/studio-policies.pdf" target="_blank">Studio Policies</a>
     <ul class="nav__ul">
       <li>
         <a href="https://instagram.com/themusiciansdencr" style="padding:0px 0px 0px 0px; font-size: larger;" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
@@ -399,6 +451,16 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
 
 </script>
