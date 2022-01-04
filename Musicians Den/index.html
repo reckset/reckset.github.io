@@ -4,7 +4,7 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/ebdcb2fe93.js" crossorigin="anonymous"></script>
-  <!--<script src="js/md.js"></script>-->
+  <script src="js/md.js"></script>
 </head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,12 +22,6 @@
     <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
     <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
 
-    <!-- Contact information and Social Media for small and medium screens
-    <ul class="md-hide-large" id="mdMediumNavbarCentered">
-      <li><a class="md-hide-large" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a></li>
-      <li><a class="md-hide-large" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a></li>
-    </ul>
-  -->
     <!-- Navigation links -->
     <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
     <a href="#lessons" class="w3-bar-item w3-button">Lessons & Classes</a>
@@ -526,25 +520,10 @@
       </li>
     </ul>
   </div>
-  
-  <!--
-  <div class="legal">
-    <p>&copy; 2020 The Musician's Den</p>
-    <div class="legal__links">
-      <span>Building community through music</span>
-    </div>
-  </div>
--->
 </footer>
 
 <script>
-  // Activate defaultLesson when page loads
-  // document.getElementById("guitarLesson").click();
-
-  // Activate Guitar Shop Inventory section when page loads
-  //document.getElementById("guitarInventory").click();
-
-  var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -556,9 +535,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -570,17 +549,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
 </script>
 
 </body>
