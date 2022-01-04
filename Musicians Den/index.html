@@ -4,7 +4,7 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/ebdcb2fe93.js" crossorigin="anonymous"></script>
-  <script src="js/md.js"></script>
+  <!--<script src="js/md.js"></script>-->
 </head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,6 @@
 <div class="w3-top">
   <div class="w3-bar md-hide-small md-hide-medium" id="mdNavbar">
     <!-- Contact information and Social Media on the right side of Navbar for large screens -->
-    <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
     <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
     <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
 
@@ -31,80 +30,23 @@
   -->
     <!-- Navigation links -->
     <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
-
-    <!-- Dropdown menu for Lessons nav item -->
-    <div class="lessonsDropdown" id="myDropdownMenu">
-      <a href="#lessons"><button class="w3-button">Lessons</button></a>
-      <div class="lessonsDropdown-content">
-        <a href="#lessons" onclick="openMenu(event, 'Guitar', 'guitarLessonText', 'guitarLessonImage');">Guitar</a>
-        <a href="#lessons" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');">Voice</a>
-        <a href="#lessons" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');">Voice/Guitar</a>
-        <a href="#lessons" onclick="openMenu(event, 'Online', 'onlineLessonText', 'onlineLessonImage');">Online</a>
-      </div>
-    </div>
-
-    <a href="#portfolio" class="w3-bar-item w3-button">Events</a>
-    
-    <!-- Dropdown menu for Studio Info nav item -->
-    <div class="lessonsDropdown">
-      <a href="#policies"><button class="w3-button">Studio Info</button></a>
-      <div class="lessonsDropdown-content">
-        <a href="#policies">Calendar</a>
-        <a href="#policies">Policies</a>
-      </div>
-    </div>
-
-    <!-- Dropdown menu for Guitar Shop nav item -->
-    <div class="lessonsDropdown">
-      <a href="#guitarShop"><button class="w3-button">Guitar Shop</button></a>
-      <div class="lessonsDropdown-content">
-        <a href="#guitarShopMenu" onclick="openGuitarShopMenu(event, 'Inventory', 'inventoryText', 'inventoryImage');">Inventory</a>
-        <a href="#guitarShopMenu" onclick="openGuitarShopMenu(event, 'Services', 'servicesText', 'servicesImage');">Services</a>
-      </div>
-    </div>
-
+    <a href="#lessons" class="w3-bar-item w3-button">Lessons & Classes</a>
     <a href="#about" class="w3-bar-item w3-button">About Us</a>
+    <a href="#calendar" class="w3-bar-item w3-button">Calendar</a>
+    <a href="#guitarShop" class="w3-bar-item w3-button">Guitar Shop</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
   </div>
 
   <!-- Navbar on medium screens -->
   <div class="w3-bar md-hide-small md-hide-large" id="mdMediumNavbar">
-    <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a></li>
     <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a></li>
     <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a></li>
     
     <a href="index.html#home" class="md-medium-bar-item w3-button">Home</a>
-
-    <div class="lessonsDropdown">
-      <a href="#lessons"><button class="w3-button" style="padding:8px 10px; font-size: 98%;">Lessons</button></a>
-      <div class="lessonsDropdown-content">
-        <a href="#lessons" onclick="openMenu(event, 'Guitar', 'guitarLessonText', 'guitarLessonImage');">Guitar</a>
-        <a href="#lessons" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');">Voice</a>
-        <a href="#lessons" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');">Voice/Guitar</a>
-        <a href="#lessons" onclick="openMenu(event, 'Online', 'onlineLessonText', 'onlineLessonImage');">Online</a>
-      </div>
-    </div>
-
-    <a href="#portfolio" class="md-medium-bar-item w3-button">Events</a>
-
-    <div class="lessonsDropdown">
-      <a href="#policies"><button class="w3-button" style="padding:8px 10px; font-size: 98%;">Studio Info</button></a>
-      <div class="lessonsDropdown-content">
-        <a href="#contact" onclick="openMenu(event, 'Guitar');">Calendar</a>
-        <a href="#contact" onclick="openMenu(event, 'Vocal');">Policies</a>
-      </div>
-    </div>
-
-    <!-- Dropdown menu for Guitar Shop nav item -->
-    <div class="lessonsDropdown">
-      <a href="#guitarShop"><button class="w3-button" style="padding:8px 10px; font-size: 98%;">Guitar Shop</button></a>
-      <div class="lessonsDropdown-content">
-        <a href="#guitarShopMenu" onclick="openGuitarShopMenu(event, 'Inventory', 'inventoryText', 'inventoryImage');">Inventory</a>
-        <a href="#guitarShopMenu" onclick="openGuitarShopMenu(event, 'Services', 'servicesText', 'servicesImage');">Services</a>
-      </div>
-    </div>
-
+    <a href="#lessons" class="md-medium-bar-item w3-button">Lessons</a>
     <a href="#about" class="md-medium-bar-item w3-button">About Us</a>
+    <a href="#calendar" class="md-medium-bar-item w3-button">Calendar</a>
+    <a href="#guitarShop" class="md-medium-bar-item w3-button">Guitar Shop</a>
     <a href="#contact" class="md-medium-bar-item w3-button">Contact</a>
   </div>
 
@@ -118,14 +60,12 @@
 
   <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
   <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
-  <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="" target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
 
   <div id="navDemo" class="w3-bar-block w3-white w3-hide md-hide-large md-hide-medium">
     <a href="#lessons" class="w3-bar-item w3-button" onclick="toggleFunction()">Lessons</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Events</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Studio Info</a>
-    <a href="#guitarShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Guitar Shop</a>
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
+    <a href="#calendar" class="w3-bar-item w3-button" onclick="toggleFunction()">Calendar</a>
+    <a href="#guitarShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Guitar Shop</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
   </div>
   </div>
@@ -141,350 +81,137 @@
 <!-- Simple vision statement -->
 <div class="w3-content w3-container w3-padding-32">
   <h3 class="w3-center">BUILDING COMMUNITY THROUGH MUSIC...</h3>
-    <h4 class="w3-center"><em>with private & group guitar and voice lessons</em></h4>
+  <h4 class="w3-center"><em>guitar &middot voice &middot piano &middot bass &middot ukulele</em></h4>
+  <h4 class="w3-center"><em>songwriting &middot performance &middot auditions</em></h4>
 </div>
 
-<!-- Lessons Container -->
+<!-- LESSONS CONTAINER -->
 <div class="w3-container w3-padding-64" id="lessons">
-<!--<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">-->
-  <div class="w3-content">
-    <h3 class="w3-center">LESSONS</h3>
-    <p class="w3-center"><em>Our lesson plans can be flexible and customized to help you reach your goals.</em></p>
-    <!--<h1 class="w3-center w3-jumbo" style="margin-bottom:64px">LESSONS</h1>-->
 
-    <!-- Lessons Menu with images rather than text -->
-    <div class="w3-row w3-row-padding w3-center" id="menu">
+    <div class="w3-row w3-row-padding w3-center">
 
-    <a href="javascript:void(0)" onclick="openMenu(event, 'Guitar', 'guitarLessonText', 'guitarLessonImage');" id="guitarLesson">
-      <div class="w3-col m3 menulink">
-      <img src="images/lessons-guitar.png" style="width:60%" class="w3-hover-opacity menuimage" id="guitarLessonImage" alt="Guitar Lessons"><br>
-      <span class="menutext" id="guitarLessonText">Guitar</span>
-    </div>
-    </a>
-
-    <a href="javascript:void(0)" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');" id="vocalLesson">
-      <div class="w3-col m3 menulink">
-      <img src="images/lessons-vocal.png" style="width:60%" class="w3-hover-opacity menuimage" id="vocalLessonImage" alt="Vocal Lessons"><br>
-      <span class="menutext" id="vocalLessonText">Voice</span>
-    </div>
-    </a>
-
-    <a href="javascript:void(0)" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');" id="comboLesson">
-      <div class="w3-col m3 menulink">
-      <img src="images/lessons-combo.png" style="width:60%" class="w3-hover-opacity menuimage" id="comboLessonImage" alt="Combo (Guitar & Vocal) Lessons"><br>
-      <span class="menutext" id="comboLessonText">Voice/Guitar</span>
-    </div>
-    </a>
-
-    <a href="javascript:void(0)" onclick="openMenu(event, 'Online', 'onlineLessonText', 'onlineLessonImage');" id="onlineLesson">
-      <div class="w3-col m3 menulink">
-      <img src="images/lessons-online.png" style="width:60%" class="w3-hover-opacity menuimage" id="onlineLessonImage" alt="Virtual Lessons"><br>
-      <span class="menutext" id="onlineLessonText">Online</span>
-    </div>
-    </a>
-  
-    </div>
-    <!-- end of lessons menu -->
-
-    <!-- Selected lesson content -->
-    <div id="Guitar" class="w3-container menu w3-padding-32 w3-white">
-      <p>
-        Guitar lessons are available for all levels of students. Whether you are looking to learn more about guitar theory, song structure, performing, or wanting to learn some of your favorite songs, Greg will customize your lesson plan to help you achieve your guitar goals.
-      </p>
-      <p>
-        Both in studio and online lessons are available.
-      </p>
-      <hr>
-      <p class="w3-center"><a href="documents/Tuition-Semester-Pricing.pdf" target="_blank">Learn more about guitar lesson pricing</a></p>
-      <hr>
-    </div>
-
-    <div id="Vocal" class="w3-container menu w3-padding-32 w3-white">
-      <p>
-        Voice lessons are available for all levels of students. Charlene's approach will help you learn more about music as a whole, song structure, and how to use your voice as a musical instrument.
-      </p>
-      <p>
-        Both in studio and online lessons are available.
-      </p>
-      <hr>
-      <p class="w3-center"><a href="documents/Tuition-Semester-Pricing.pdf" target="_blank">Learn more about voice lesson pricing</a></p>
-      <hr>
-    </div>
-
-    <div id="Combo" class="w3-container menu w3-padding-32 w3-white">
-      <p>
-        For students looking to combine both guitar playing and singing, Greg and Charlene offer lesson plans that combine their experience an knowledge, bringing you teh best of both worlds!
-      </p>
-      <hr>
-      <p class="w3-center"><a href="documents/Tuition-Semester-Pricing.pdf" target="_blank">Learn more about voice/guitar combo lesson pricing</a></p>
-      <hr>
-    </div><br>
-
-    <div id="Online" class="w3-container menu w3-padding-32 w3-white">
-      <p>
-        Online lessons are available for both guitar and vocal lessons.
-      </p>
-      <hr>
-      <p class="w3-center"><a href="documents/Tuition-Semester-Pricing.pdf" target="_blank">Learn more about online lesson pricing</a></p>
-      <hr>
-    </div>
-
-  </div>
-</div>
-<!-- End of Lessons section-->
-
-<!-- Second Parallax Image with Events Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">EVENTS</span>
-  </div>
-</div>
-
-<!-- Events Section -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <p class="w3-center"><em>The Musician's Den integrates several different types of performance and collaboration opportunities into our lesson plans. Check out some images from some of our jam sessions, karaoke nights, recording sessions, and even online collaborations.<br>(Click on the images to make them bigger, then click anywhere to return...)</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width)
-       To add more photos, copy a div grouping of 4 images and paste below the currently defined images, make sure Load More button
-       is in the bottom div grouping. Suggest keeping this to a limit, maybe 16-20 total images? -->
-       <h4 class="w3-center">OPEN MIC</h4>
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/student-01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Voice student at open mic performance">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/student-03.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Guitar student at open mic performance">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/student-05.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Voice and Guitar students performing at open mic">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/student-02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Voice student at open mic performance">
-    </div>
-  </div>
-  <br />
-  <h4 class="w3-center">HOLIDAY CONCERT</h4>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/group-04.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Voice and Guitar students performing at holiday concert">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/Zak-Tim.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Father and Son guitar students">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/Steve.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Guitar solo during holiday concert">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/Thesius.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Guitar student performing at holiday concert">
-    </div>
-  </div>
-
-  <br />
-  <h4 class="w3-center">JAM SESSIONS</h4>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/group-03.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Group of young guitart students at jam session">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/student-07.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Guitarits at jam session">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/jam-session-01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Guitarists and drummer at jam session">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/jam-session-02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Greg with student Steve at jam session">
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/karaoke-01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Karaoke Night">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/studio-01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="TMD Studio">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/Jimmy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jimmy">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/studio-02.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="TMD Studio">
-    </div>
-</div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/studio-03.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="TMD Studio">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/studio-04.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="TMD Studio">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/studio-05.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="TMD Studio">
-    </div>
-
-    <div class="w3-col m3 md-thumbnail">
-      <img src="images/studio-06.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="TMD Studio">
-    </div>
-
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" id="loadMore">Load More</button>
-  </div>
-
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Container (Testimonial Section) -->
-<div class="w3-content w3-container w3-padding-64" id="testimonials">
-  <h3 class="w3-center">TESTIMONIALS</h3>
-
-  <!-- Slideshow container -->
-  <div class="slideshow-container">
-
-  <!-- Full-width slides/quotes -->
-    <div class="mySlides">
-      <q>My 13 year old has been taking acoustic guitar lessons with Greg for 11 months. I am amazed at how much she has learned and grown over that time.</q>
-      <p class="author">- Jenifer F.</p>
-    </div>
-
-    <div class="mySlides">
-      <q>Greg is a phenominal teacher. He is intuitive, soulful and knows how to meet his student exactly where they are on the learning curve. He is a natural, and I would recommend him to anyone--any age and any skill level.</q>
-      <p class="author">- Lisa G.</p>
-    </div>
-
-    <div class="mySlides">
-      <q>I have been playing the guitar for over 25 years. Greg was able to connect to my goals and focus on areas that I want to improve in, and I notice progress every week!</q>
-      <p class="author">- Tim R.</p>
-    </div>
-
-    <!-- Next/prev buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-
-  <!-- Dots/bullets/indicators -->
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-  </div>
-
-</div>
-
-<!-- Container (Guitar Shop Section) -->
-<div class="w3-content w3-container w3-padding-64" id="guitarShop">
-  <h3 class="w3-center">GUITAR SHOP</h3>
-  <p class="w3-center"><em>Shop, Service, Rentals</em></p>
-
-  <div class="w3-row">
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>
-        The Musician's Den offers great prices on used guitars that have been setup to play great. Repairs and services (such as re-stringing your guitar) are also available. There are even options to rent an instrument and purchase at the end of a semester.
-      </p>
-      <p>
-        <a href="mailto:greg@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20guitar%20inventory%20and%20services">Email Greg</a> to learn more.
-      </p>
-    </div>
-
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <br>
-      <img src="images/custom-shop-01.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Greg working on guitar" width="333" height="333">
-    </div>
-
-  </div>
-</div>
-
-<div class="w3-container w3-padding-64" id="lessons">
-</div>
-
-<!--<div class="w3-container w3-padding-64" id="lessons">-->
-  <!--<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">-->
-
-    <!-- Guitar Shop Menu
-    <div class="w3-content">
-      
-      <div class="w3-row w3-row-padding w3-center" id="guitarShopMenu">
-
-      <div class="w3-col m3">
-        <p>&nbsp</p>
-      </div>
-  
-      <a href="javascript:void(0)" onclick="openGuitarShopMenu(event, 'Inventory', 'inventoryText', 'inventoryImage');" id="guitarInventory">
-        <div class="w3-col m3">
-        <img src="images/guitar-shop-inventory.png" style="width:60%" class="guitarShopMenuImage" id="inventoryImage" alt="Guitar Shop Inventory"><br>
-        <span class="guitarShopMenuText" id="inventoryText">Inventory</span>
-      </div>
-      </a>
-  
-      <a href="javascript:void(0)" onclick="openGuitarShopMenu(event, 'Services', 'servicesText', 'servicesImage');" id="guitarService">
-        <div class="w3-col m3">
-        <img src="images/guitar-shop-services.png" style="width:60%" class="guitarShopMenuImage" id="servicesImage" alt="Guitar Shop Services"><br>
-        <span class="guitarShopMenuText" id="servicesText">Services</span>
-      </div>
-      </a>
-
-      <div class="w3-col m3">
-        <p>&nbsp</p>
-      </div>
-    
-      </div>
-      end of Guitar Shop menu -->
-  
-      <!-- Selected Guitar Shop content
-      <div id="Inventory" class="w3-container guitarShopMenu w3-padding-32 w3-white">
-        <p>
-          Inventory can be described here, maybe some pictures of current (or past) inventory?
+      <!-- PRIVATE LESSONS -->
+      <div class="w3-col m4 menulink tmd-col">
+        <h3 style="color: #0041a3;">Private Music Lessons</h3>
+        <p class="tmd-col">
+          Private lessons offered for guitar, voice, piano, bass, ukulele, songwriting, performance, and auditions.
         </p>
+
+        <!-- SEMESTER INFO -->
+        <h4 style="color: #ff8644;">Semester Program</h4>
         <p>
-          Add pricing information?
+          Best value and musical growth<br>
+          Jan 10th - May 15th (16 weekly lessons)
+        </p>
+        <p class="tmd-col">
+          30-minutes: $130/month ($650/semester)<br>
+          60-minutes: $221/month ($1105/semester)<br>
+          *60 minute lessons can be multi-instruments and shared between family members<br>
+          *Semester includes workshop, jam night, karaoke night, end of semester researhals, and performance<br>
+          *60 minute lessons receive automatic 15% tuition discount
+        </p>
+
+        <!-- LESSON PACK INFO -->
+        <h4 style="color: #ff8644;">Lesson Packs</h4>
+        <p>
+          Non-semester private lessons
+        </p>
+        <p class="tmd-col">
+          4-pack of 30 minute lessons: $188<br>
+          4-pack of 60 minute lessons: $319<br>
+          6-pack of 30 minute lessons: $259<br>
+          6-pack of 60 minute lessons: $440<br>
+          *Semester benefits and discounts do not apply<br>
+          *Lesson packs must be used within current semester
         </p>
       </div>
-  
-      <div id="Services" class="w3-container guitarShopMenu w3-padding-32 w3-white">
+      <!-- END PRIVATE LESSONS -->
+
+      <!-- GROUP CLASSES -->
+      <div class="w3-col m4 menulink tmd-col">
+        <h3 style="color: #0041a3;">Group Classes</h3>
+
+        <!-- SEMESTER INFO -->
+        <h4 style="color: #ff8644;">Jan 24th to May 15th (15 weeks)</h4>
         <p>
-          Services can be described here, maybe a menu?
+          Beginners guitar club (age 9+)<br>
+          Mondays 5:30-6:20pm: $330<br>
+        </p>
+        <p>
+          Group singing (age 10-teen)<br>
+          Mondays 6:30-7:20pm: $330<br>
+        </p>
+        <p>
+          Singing club (age 6-8)<br>
+          Tuesdays 5:30-6:15pm: $330<br>
+        </p>
+        <p class="tmd-col">
+          TMD Pop Squad (now 15 weeks!)<br>
+          *By invite or audition only
+          *Group/solo/harmony singing
+          *Pop/rock/musical theater
+          Thursdays 5:30-6:15pm: $330
+        </p>
+        <p class="tmd-col">
+          *Currently enrolled private students & family members receive 10% discount<br>
+          *Group class tuition paid in full at beginning of semester or split into 2 payments<br>
+          *There are no makeup classes available if student misses<br>
+          *Group classes can participate in all studio semester events
         </p>
       </div>
-  
-    </div>
-    End of Guitar Shop section-->
-  <!--</div>-->
-  
+      <!-- END GROUP CLASSES -->
 
-<!-- Third Parallax Image with Portfolio Text -->
+      <!-- ROCK BAND -->
+      <div class="w3-col m4 menulink tmd-col">
+        <h3 style="color: #0041a3;">Rock Band</h3>
+        <p class="tmd-col">
+           With Greg & Charlene
+        </p>
+
+        <h4 class="tmd-col" style="color: #ff8644;">Rock band classes now 15 weeks! Beginning week of Jan 17th to May 8th.</h4>
+        <p>
+          Learn, rehearse, perform in a band! Three teachers: voice/guitar/bass/drums/keys<br>
+          *By invite or audition only
+        </p>
+        <p>$390 (10% discount for currently enrolled private students)</p>
+
+        <!-- FRIDAY NIGHT -->
+        <h4 style="color: #ff8644;">Friday Night Rock Band</h4>
+        <p>
+          6-7pm (age 11/under)<br>
+          7-8pm (age 12-teen)<br>
+          Dress rehearsal 4/22<br>
+          Performance 4/29<br>
+          Movie/Pizza party 5/6
+        </p>
+
+        <!-- WEDNESDAY NIGHT -->
+        <h4 style="color: #ff8644;">Wednesday Night Rockin' Dad Band</h4>
+        <p>
+          7-8pm (age 40+)<br>
+          Dress rehearsal 4/27<br>
+          Performance in local venue 5/4
+        </p>
+        <p class="tmd-col">
+          *Rock Band tuition paid in full at beginning of semester or split into 2 payments<br>
+          *There are no makeup classes available if student misses<br>
+          *Rock Bands can participate in all studio semester events<br>
+        </p>
+      </div>
+      <!-- END ROCK BAND -->
+    </div>
+</div>
+<!-- END LESSONS & CLASSES -->
+
+<!-- ABOUT US -->
+<!-- PARALAX IMAGE WITH HEADER -->
 <div class="bgimg-3 w3-display-container w3-opacity-min" id="about">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">ABOUT US</span>
   </div>
 </div>
 
-<!-- Container (About Section) -->
+<!-- CONTENT -->
 <div class="w3-content w3-container w3-padding-64">
   <p class="w3-center"><em>Our Musical Mission</em></p>
   <p>
@@ -493,7 +220,7 @@
     We inspire students to find their own voices and be original artists. We tailor the curriculum
     to match our students’ individual learning needs and goals. We want our studio to be a welcoming,
     safe space for students and families. We are so honored to teach the gift of music and strive to
-    create a musical community for all of us.<br /><br />
+    create a musical community for all of us. Meet the team...<br /><br />
   </p>
 
   <!-- photo of Charlene
@@ -544,94 +271,91 @@
 </div>
 -->
 
-<!-- Housekeeping and Policies -->
-<div class="w3-row">
-<!--<div class="w3-content w3-container w3-padding-64" id="policies">-->
-  <p class="w3-center"><em>Schedule and Calendar</em></p>
-  <p class="w3-center">
-    <strong>End of May:</strong> Beatles songs, collaboration through recording.<br /><br />
-  </p>
+<!-- GUITAR SHOP -->
+<div class="w3-content w3-container w3-padding-64" id="guitarShop">
+  <h3 class="w3-center">GUITAR SHOP</h3>
+  <p class="w3-center"><em>Shop & Service</em></p>
 
-  <div class="w3-row-padding w3-center">
-    <p class="w3-center"><em>Studio Policies</em></p>
-    <div class="w3-col m3">
-      <a href="documents/Student-Family-Expectations.pdf" target="_blank">Student & Family Expectations</a>
+  <div class="w3-row">
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>
+        The Musician's Den offers great prices on used guitars that have been setup to play great. Repairs and services (such as re-stringing your guitar) are also available from Greg who is a certified guitar repair technician.
+      </p>
+      <p>
+        <a href="mailto:greg@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20guitar%20inventory%20and%20services">Email Greg</a> to learn more.
+      </p>
     </div>
 
-    <div class="w3-col m3">
-      <a href="documents/Tuition-Semester-Pricing.pdf" target="_blank">Tuition & Semester Pricing</a>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <br>
+      <img src="images/custom-shop-01.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Greg working on guitar" width="333" height="333">
     </div>
 
-    <div class="w3-col m3">
-      <a href="documents/Canceled-Missed-Lessons.pdf" target="_blank">Canceled & Missed Lessons</a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="documents/Studio-Policies-Spring-2020.pdf" target="_blank">Full Studio Policies</a>
-    </div>
   </div>
 </div>
+<!-- END GUITAR SHOP -->
+
+<!-- TESTIMONIALS -->
+<div class="w3-content w3-container w3-padding-64" id="testimonials">
+  <h3 class="w3-center">TESTIMONIALS</h3>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+    <div class="mySlides">
+      <q>My 13 year old has been taking acoustic guitar lessons with Greg for 11 months. I am amazed at how much she has learned and grown over that time.</q>
+      <p class="author">- Jenifer F.</p>
+    </div>
+
+    <div class="mySlides">
+      <q>Greg is a phenominal teacher. He is intuitive, soulful and knows how to meet his student exactly where they are on the learning curve. He is a natural, and I would recommend him to anyone--any age and any skill level.</q>
+      <p class="author">- Lisa G.</p>
+    </div>
+
+    <div class="mySlides">
+      <q>I have been playing the guitar for over 25 years. Greg was able to connect to my goals and focus on areas that I want to improve in, and I notice progress every week!</q>
+      <p class="author">- Tim R.</p>
+    </div>
+
+    <!-- Next/prev buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots/bullets/indicators -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+</div>
+<!-- END TESTIMONIALS -->
+
+<div class="w3-container w3-padding-64" id="lessons">
+</div>
+
 </div>
 
 <footer class="footer" id="contact">
   <div class="footer__addr">
     <h1 class="footer__logo">The Musician's Den</h1>
+    <a href="documents/studio-policies.pdf" target="_blank">Studio Policies</a>
     <address>
       Castle Rock, CO<br>
       <a class="footer__btn" href="mailto:admin@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">Email Us</a>
+      admin@themusiciansden.net<br>
     </address>
+    <ul class="nav__ul">
+      <li>
+        <a href="https://instagram.com/themusiciansdencr" style="padding:0px 0px 0px 0px; font-size: larger;" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.facebook.com/themusiciansdenCR/" style="padding:0px 0px 0px 8px; font-size: larger;" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+      </li>
+    </ul>
   </div>
-  
-  <ul class="footer__nav">
-    <li class="nav__item">
-      <h2 class="nav__title">Social</h2>
-
-      <ul class="nav__ul">
-        <li>
-          <a href="https://instagram.com/themusiciansdencr" style="padding:0px 0px 0px 0px; font-size: larger;" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
-          <a href="https://www.facebook.com/themusiciansdenCR/" style="padding:0px 0px 0px 8px; font-size: larger;" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
-          <a href="" style="padding:0px 0px 0px 8px; font-size: larger;"  target="_blank"><i class="fab fa-youtube w3-hover-opacity"></i></a>
-        </li>
-
-      </ul>
-    </li>
-    
-      <!--<li class="nav__item nav__item--extra">-->
-      <li class="nav__item">
-      <h2 class="nav__title">Lessons</h2>
-
-      <!--<ul class="nav__ul nav__ul--extra">-->
-      <ul class="nav__ul">
-        <li>
-          <a href="#lessons" onclick="openMenu(event, 'Guitar', 'guitarLessonText', 'guitarLessonImage');">Guitar</a>
-        </li>
-        
-        <li>
-          <a href="#lessons" onclick="openMenu(event, 'Vocal', 'vocalLessonText', 'vocalLessonImage');">Voice</a>
-        </li>
-        
-        <li>
-          <a href="#lessons" onclick="openMenu(event, 'Combo', 'comboLessonText', 'comboLessonImage');">Voice/Guitar</a>
-        </li>
-
-        <li>
-          <a href="#lessons" onclick="openMenu(event, 'Online', 'onlineLessonText', 'onlineLessonImage');">Online</a>
-        </li>
-      </ul>
-    </li>
-  
-    <li class="nav__item">
-      <h2 class="nav__title">Information & Policies</h2>
-      
-      <ul class="nav__ul">
-        <li>
-          <a>Calendar</a>
-        </li>
-        <li>
-          <a href="documents/Studio-Policies-Spring-2020.pdf" target="_blank">Policies</a>
-        </li>
-      </ul>
-    </li>
   
   <!--
   <div class="legal">
@@ -645,7 +369,7 @@
 
 <script>
   // Activate defaultLesson when page loads
-  document.getElementById("guitarLesson").click();
+  // document.getElementById("guitarLesson").click();
 
   // Activate Guitar Shop Inventory section when page loads
   //document.getElementById("guitarInventory").click();

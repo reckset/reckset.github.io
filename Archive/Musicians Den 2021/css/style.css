@@ -128,11 +128,6 @@ body, html {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .lessonsDropdown:hover .dropButton {background-color: #3e8e41;}
 
-/* Lesson and Classes padding */
-.tmd-col {
-  padding: 0px 24px 0px 24px;
-}
-
 .md-display-middle {
   position:absolute;
   /*top:87%;*/
