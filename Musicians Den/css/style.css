@@ -58,11 +58,11 @@ body, html {
   }
 
 /* NavBar sizing */
-/* original sizes
+
 @media (max-width:992px) and (min-width:601px){.md-hide-medium{display:none!important}}
 @media (max-width:600px){.md-hide-small{display:none!important}}
 @media (min-width:993px){.md-hide-large{display:none!important}}
-*/
+
 
 /* adjust sizes for TMD
 @media (max-width:1049px) and (min-width:660px){.md-hide-medium{display:none!important}}
@@ -70,10 +70,11 @@ body, html {
 @media (min-width:1050px){.md-hide-large{display:none!important}}
 */
 
-/* adjust sizes for TMD to have just small and large screen */
+/* adjust sizes for TMD to have just small and large screen 
 @media (min-width:800px){.md-hide-large{display:none!important}}
 @media (max-width:799px) and (min-width:660px){.md-hide-medium{display:none!important}}
 @media (max-width:659px){.md-hide-small{display:none!important}}
+*/
 
 
 .lessonsDropdown {
