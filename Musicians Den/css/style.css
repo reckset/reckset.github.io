@@ -76,6 +76,18 @@ body, html {
 @media (max-width:659px){.md-hide-small{display:none!important}}
 */
 
+/* text coloring */
+.tmd-black {
+  color: black;
+}
+
+.tmd-blue {
+  color: #0041a3;
+}
+
+.tmd-orange {
+  color: #ff8644;
+}
 
 .lessonsDropdown {
   float: left;
