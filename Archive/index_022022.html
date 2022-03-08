@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<title>Musician's Den</title>
+<head>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/ebdcb2fe93.js" crossorigin="anonymous"></script>
+  <script src="js/md.js"></script>
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="Stylesheet" href="css/style.css" type="text/css" media="screen">
+
+  <!-- FavIcon -->
+  <link rel="icon" href="http://www.themusiciansden.net/favicon.png">
+
+  <!-- Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Building community through music." />
+  <meta property="og:url" content="www.themusiciansden.net" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Guitar | Voice | Piano | More" />
+  <meta property="og:image" content="images/tmd-og.png" />
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar md-hide-small md-hide-medium" id="mdNavbar">
+    <!-- Contact information and Social Media on the right side of Navbar for large screens -->
+    <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+    <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+
+    <!-- Navigation links -->
+    <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#lessons" class="w3-bar-item w3-button">Lessons & Classes</a>
+    <a href="#about" class="w3-bar-item w3-button">About Us</a>
+    <a href="#calendar" class="w3-bar-item w3-button">Calendar</a>
+    <a href="#guitarShop" class="w3-bar-item w3-button">Guitar Shop</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+
+  </div>
+
+  <!-- Navbar on medium screens -->
+  <div class="w3-bar md-hide-small md-hide-large" id="mdMediumNavbar">
+    <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a></li>
+    <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a></li>
+    
+    <a href="index.html#home" class="md-medium-bar-item w3-button">Home</a>
+    <a href="#lessons" class="md-medium-bar-item w3-button">Lessons & Classes</a>
+    <a href="#about" class="md-medium-bar-item w3-button">About Us</a>
+    <a href="#calendar" class="md-medium-bar-item w3-button">Calendar</a>
+    <a href="#guitarShop" class="md-medium-bar-item w3-button">Guitar Shop</a>
+    <a href="#contact" class="md-medium-bar-item w3-button">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div class="w3-bar md-hide-medium md-hide-large" id="mdSmallNavbar">
+  <a class="w3-bar-item w3-button w3-hover-black w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <i class="fas fa-bars"></i>
+  </a>
+  
+  <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
+
+  <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+  <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide md-hide-large md-hide-medium">
+    <a href="#lessons" class="w3-bar-item w3-button" onclick="toggleFunction()">Lessons & Classes</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
+    <a href="#calendar" class="w3-bar-item w3-button" onclick="toggleFunction()">Calendar</a>
+    <a href="#guitarShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Guitar Shop</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="md-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-medium w3-hide-large">&nbspTMD</span><span class="w3-hide-small">The Musician's Den</span></span>
+  </div>
+</div>
+
+<!-- Simple vision statement -->
+<div class="w3-content w3-container w3-padding-32">
+  <h3 class="w3-center">BUILDING COMMUNITY THROUGH MUSIC...</h3>
+  <h4 class="w3-center"><em>guitar &middot voice &middot piano &middot bass &middot ukulele</em></h4>
+  <h4 class="w3-center"><em>songwriting &middot performance &middot auditions</em></h4>
+</div>
+
+<!-- LESSONS CONTAINER -->
+<div class="w3-container w3-padding-64" id="lessons">
+  <div class="w3-content">
+    <div class="w3-row w3-row-padding w3-center">
+      
+      <!-- PRIVATE LESSONS -->
+      <div class="w3-row">
+        <h3 class="tmd-blue">Private Music Lessons</h3>
+        <p>
+          Private lessons offered for guitar, voice, piano, bass, ukulele, songwriting, performance, and auditions.
+        </p>
+
+        <!-- SEMESTER INFO -->
+        <h4 class="tmd-orange">Semester Program</h4>
+        <p>
+          Best value and musical growth<br>
+          Jan 10th - May 15th (16 weekly lessons)
+        </p>
+        <p>
+          <span class="tmd-black">30-minutes:</span> $130/month ($650/semester)<br>
+          <span class="tmd-black">60-minutes:</span> $221/month ($1105/semester)<br>
+          *60 minute lessons can be multi-instruments and shared between family members<br>
+          *Semester includes workshop, jam night, karaoke night, end of semester rehearsals, and performance<br>
+          *60 minute lessons receive automatic 15% tuition discount
+        </p>
+
+        <!-- LESSON PACK INFO -->
+        <h4 class="tmd-orange">Lesson Packs</h4>
+        <p>
+          Non-semester private lessons
+        </p>
+        <p>
+          <span class="tmd-black">4-pack of 30 minute lessons:</span> $188<br>
+          <span class="tmd-black">4-pack of 60 minute lessons:</span> $319<br>
+          <span class="tmd-black">6-pack of 30 minute lessons:</span> $259<br>
+          <span class="tmd-black">6-pack of 60 minute lessons:</span> $440<br>
+          *Semester benefits and discounts do not apply<br>
+          *Lesson packs must be used within current semester
+        </p>
+        email <a href="mailto:admin@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">admin@themusiciansden.net</a> for more info.
+      </div>
+      <!-- END PRIVATE LESSONS -->
+
+      <div class="w3-container w3-padding-32"></div>
+
+      <!-- GROUP CLASSES -->
+      <div class="w3-row">
+        <h3 class="tmd-blue">Group Classes</h3>
+
+        <!-- SEMESTER INFO -->
+        <h4 class="tmd-orange">Jan 24th to May 15th (15 weeks)</h4>
+        <p>
+          <span class="tmd-black">Beginners guitar club (age 8+)</span><br>
+          Mondays 5:30-6:20pm: $330<br>
+          <span class="tmd-orange">(Limited spots available)</span><br>
+        </p>
+        <p>
+          <span class="tmd-black">Group singing (age 10-teen)</span><br>
+          Mondays 6:30-7:20pm: $330<br>
+        </p>
+        <p>
+          <span class="tmd-black">Singing & Ukulele club (age 6-8)</span><br>
+          Tuesdays 5:30-6:15pm: $330<br>
+        </p>
+        <p>
+          *Currently enrolled private students & family members receive 10% discount<br>
+          *Group class tuition paid in full at beginning of semester or split into 2 payments<br>
+          *There are no makeup classes available if student misses<br>
+          *Group classes can participate in all studio semester events
+        </p>
+        email <a href="mailto:admin@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">admin@themusiciansden.net</a> for more info.
+      </div>
+      <!-- END GROUP CLASSES -->
+
+      <div class="w3-container w3-padding-32"></div>
+
+      <!-- ROCK BAND -->
+      <div class="w3-row">
+        <h3 class="tmd-blue">Rock Band</h3>
+        <p>
+           With Greg & Charlene<br>
+           <span class="tmd-orange">(Limited spots available)</span><br>
+        </p>
+
+        <h4 class="tmd-orange">Rock band classes now 15 weeks! Beginning week of Jan 17th to May 8th.</h4>
+        <p>
+          Learn, rehearse, perform in a band! Three teachers: voice/guitar/bass/drums/keys<br>
+          *By invite or audition only
+        </p>
+        <p>$390 (10% discount for currently enrolled private students)</p>
+
+        <!-- FRIDAY NIGHT -->
+        <h4 class="tmd-orange">Friday Night Rock Band</h4>
+        <p>
+          6-7pm (age 11/under)<br>
+          7-8pm (age 12-teen)<br>
+          Dress rehearsal 4/22<br>
+          Performance 4/29<br>
+          Movie/Pizza party 5/6
+        </p>
+
+        <!-- WEDNESDAY NIGHT -->
+        <h4 class="tmd-orange">Wednesday Night Rockin' Dad Band</h4>
+        <p>
+          7-8pm (age 40+)<br>
+          Dress rehearsal 4/27<br>
+          Performance in local venue 5/4
+        </p>
+        <p>
+          *Rock Band tuition paid in full at beginning of semester or split into 2 payments<br>
+          *There are no makeup classes available if student misses<br>
+          *Rock Bands can participate in all studio semester events<br>
+        </p>
+        email <a href="mailto:admin@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">admin@themusiciansden.net</a> for more info.
+      </div>
+      <!-- END ROCK BAND -->
+    </div>
+    </div>
+</div>
+<!-- END LESSONS & CLASSES -->
+
+<!-- ABOUT US -->
+<!-- PARALAX IMAGE WITH HEADER -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="about">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">ABOUT US</span>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="w3-content w3-container w3-padding-64">
+  <p class="w3-center"><em>Our Musical Mission</em></p>
+  <p>
+    We are Greg and Charlene Johnson. We teach our students the language of music.
+    We believe all humans are musical. Our studio has a positive, encouraging and fun environment.
+    We inspire students to find their own voices and be original artists. We tailor the curriculum
+    to match our students’ individual learning needs and goals. We want our studio to be a welcoming,
+    safe space for students and families. We are so honored to teach the gift of music and strive to
+    create a musical community for all of us. Meet the team...
+  </p>
+  <div class="w3-container w3-padding-16"></div>
+  <!-- GREG & CHARLENE -->
+  <div class="w3-row">
+
+    <!-- Greg -->
+    <div class="w3-col l6 w3-padding-large">
+      
+      <!-- Layout for small screens -->
+      <div class = "w3-hide-medium w3-hide-large">
+        <div style="text-align: center">
+          <span class="tmd-black">Greg Johnson - Owner, Guitar Coach</span><br>
+          <img src="images/greg.jpeg" class="w3-round w3-image" alt="Greg" width="210" height="280">
+        </div>
+        <p>
+          I am a performing songwriter specializing in acoustic, electric, and bass guitar. I have recorded multiple albums of original music and traveled the country with my wife, Charlene, on vocals performing our original music. Charlene and I partnered to open The Musician’s Den studio. Our studio is designed to be a welcoming space for musicians of all levels and our goal is to create a place of vibrant musical expression and community.<br><br>
+          My passion is to take my love and knowledge of songwriting and music and share it with aspiring guitarists of all ages and skill levels. I like to break down basics into practical information for songwriting and performing. I specialize in many popular music styles including Blues, Rock, Pop, Alternative, Reggae, Metal and Folk.<br><br>
+          I work extensively with both new and experienced guitarists. For those new to the guitar, I focus on providing a fun and enthusiastic approach so they can become comfortable with a new instrument. When working with experienced guitarists, we concentrate on new ideas, techniques, and approaches to keep them inspired and to revitalize their approach to the guitar and music in general. My approach as an instructor is to encourage confidence in my students and to work with them to reach their unique musical goals. I work with each student from their current ability level and my lessons are tailored to their musical tastes.<br><br>
+          I also enjoy traveling, hiking mountain biking, and golfing with my family! Charlene and I have three children, all of whom love performing. We also have two bunnies named Sweet Pea and Chubs, two cats named Ringo and Cosmo.
+        </p>
+      </div>
+      <div class = "w3-hide-small">
+        <span class="tmd-black">Greg Johnson - Owner, Guitar Coach</span><br>
+        <p>
+          <img src="images/greg.jpeg" class="w3-round w3-image" alt="Greg" style="float: left; margin: 0px 10px 0px 0px;" width="240" height="320">
+          I am a performing songwriter specializing in acoustic, electric, and bass guitar. I have recorded multiple albums of original music and traveled the country with my wife, Charlene, on vocals performing our original music. Charlene and I partnered to open The Musician’s Den studio. Our studio is designed to be a welcoming space for musicians of all levels and our goal is to create a place of vibrant musical expression and community.<br><br>
+          My passion is to take my love and knowledge of songwriting and music and share it with aspiring guitarists of all ages and skill levels. I like to break down basics into practical information for songwriting and performing. I specialize in many popular music styles including Blues, Rock, Pop, Alternative, Reggae, Metal and Folk.<br><br>
+          I work extensively with both new and experienced guitarists. For those new to the guitar, I focus on providing a fun and enthusiastic approach so they can become comfortable with a new instrument. When working with experienced guitarists, we concentrate on new ideas, techniques, and approaches to keep them inspired and to revitalize their approach to the guitar and music in general. My approach as an instructor is to encourage confidence in my students and to work with them to reach their unique musical goals. I work with each student from their current ability level and my lessons are tailored to their musical tastes.<br><br>
+          I also enjoy traveling, hiking mountain biking, and golfing with my family! Charlene and I have three children, all of whom love performing. We also have two bunnies named Sweet Pea and Chubs, two cats named Ringo and Cosmo.
+        </p>
+      </div>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      
+      <!-- Layout for small screens, consider removing bio text and replace with toggle -->
+      <div class = "w3-hide-medium w3-hide-large">
+        <div style="text-align: center;">
+          <span class="tmd-black">Charlene Johnson - Owner/Studio Manager, Voice Coach</span><br>
+          <img src="images/charlene.jpeg" class="w3-round w3-image" alt="Charlene" width="210" height="280">
+        </div>
+        <p>
+          My greatest passion is sharing my love of music with others as a teacher. I strive to build a unique relationship of trust with every one of my students. My voice studio is positive, fun, encouraging AND delivers singing results. Singers of all ages and abilities are welcome. You’re never too young or old!<br><br>
+          As a teacher.. I believe learning in the studio is so much more than singing. I want my students to be well rounded musicians, prepared for whatever musical opportunities come their way. I work WITH students to explore their voices and TOGETHER, we will:
+          <ul>
+            <li>Find the student’s own unique sound</li>
+            <li>Use results-driven techniques to expand vocal range, develop chest, mix, head voice, breath, placement, vocal health and SAFE singing</li>
+            <li>Understand how to interpret songs and lyrics</li>
+            <li>Learn to choose a song, key, arrangement in their voice range</li>
+            <li>Hone performance, mic, audition skills, strategies on the TMD theater stage with live musician accompaniment and learn to work with other musicians professionally</li>
+            <li>Study musicianship skills using tonic solfege, music theory, harmony, practical piano, rhythm, sight reading, songwriting, listening, music history and genres</li>
+            <li>Dive into the importance of mindset, authenticity and confidence as an artist</li>
+          </ul>
+          As a musician.. in addition to my first loves - singing and songwriting - I play some piano, percussion, flute and ukulele. I have studied, played and sung multiple genres of music from classical to pop/rock all my life. With my husband Greg, we have written, recorded, performed and toured together for many years.  We have three kids who all play instruments, sing, perform, or tech for theatre and bands.<br><br>
+          Outside of singing and teaching I enjoy going to see live music, theater, gardening and word games.
+          <ul>
+            <li>NATS - Member of The National Association of Teachers of Singing</li>
+            <li>CVTA Certification - Contemporary Voice Teacher Academy with John Henny</li>
+            <li>BAST Certification - Contemporary Voice Teacher Training</li>
+            <li>Core Singing Course -  Private Study with Meribeth Dayme</li>
+            <li>UMT - Ultimate Music Theory Advanced Teacher Training</li>
+            <li>Music Together Certified Teacher</li>
+            <li>Musical Theater Youth Director</li>
+          </ul>
+        </p>
+      </div>
+      <div class="w3-hide-small">
+        <span class="tmd-black">Charlene Johnson - Owner/Studio Manager, Voice Coach</span><br>
+        <p>
+          <img src="images/charlene.jpeg" class="w3-round w3-image" alt="Charlene" style="float: right; margin: 0px 0px 0px 10px;" width="240" height="320">
+          My greatest passion is sharing my love of music with others as a teacher. I strive to build a unique relationship of trust with every one of my students. My voice studio is positive, fun, encouraging AND delivers singing results. Singers of all ages and abilities are welcome. You’re never too young or old!<br><br>
+          As a teacher.. I believe learning in the studio is so much more than singing. I want my students to be well rounded musicians, prepared for whatever musical opportunities come their way. I work WITH students to explore their voices and TOGETHER, we will:
+          <ul>
+            <li>Find the student’s own unique sound</li>
+            <li>Use results-driven techniques to expand vocal range, develop chest, mix, head voice, breath, placement, vocal health and SAFE singing</li>
+            <li>Understand how to interpret songs and lyrics</li>
+            <li>Learn to choose a song, key, arrangement in their voice range</li>
+            <li>Hone performance, mic, audition skills, strategies on the TMD theater stage with live musician accompaniment and learn to work with other musicians professionally</li>
+            <li>Study musicianship skills using tonic solfege, music theory, harmony, practical piano, rhythm, sight reading, songwriting, listening, music history and genres</li>
+            <li>Dive into the importance of mindset, authenticity and confidence as an artist</li>
+          </ul>
+          As a musician.. in addition to my first loves - singing and songwriting - I play some piano, percussion, flute and ukulele. I have studied, played and sung multiple genres of music from classical to pop/rock all my life. With my husband Greg, we have written, recorded, performed and toured together for many years.  We have three kids who all play instruments, sing, perform, or tech for theatre and bands.<br><br>
+          Outside of singing and teaching I enjoy going to see live music, theater, gardening and word games.
+          <ul>
+            <li>NATS - Member of The National Association of Teachers of Singing</li>
+            <li>CVTA Certification - Contemporary Voice Teacher Academy with John Henny</li>
+            <li>BAST Certification - Contemporary Voice Teacher Training</li>
+            <li>Core Singing Course -  Private Study with Meribeth Dayme</li>
+            <li>UMT - Ultimate Music Theory Advanced Teacher Training</li>
+            <li>Music Together Certified Teacher</li>
+            <li>Musical Theater Youth Director</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COACHES -->
+  <div class="w3-row">
+    <!-- Ethan -->
+    <div class="w3-col m4 w3-padding-large">
+      <div style="text-align: center;">
+        <span class="tmd-black">Ethan - Guitar, Bass, Piano Coach</span><br>
+        <img src="images/ethan.jpeg" class="w3-round w3-image" alt="Ethan" width="210" height="280">
+      </div>
+      <p>
+        Hi, I'm Ethan and I play guitar, bass, and piano. I love jazz, progressive rock, and funk. I've also been studying to write large orchestrations and other music. I like to teach students by giving them the skills they need to improve on their own as well as focusing on the things that they find fun. I also teach advanced music theory to students looking to play and/or write music at a high level. In my spare time, I love playing video games and cooking.
+      </p>
+    </div>
+
+    <!-- Tessa -->
+    <div class="w3-col m4 w3-padding-large">
+      <div style="text-align: center;">
+        <span style="color: black;">Tessa - Voice Coach</span><br>
+        <img src="images/tessa.jpeg" class="w3-round w3-image" alt="Tessa" width="210" height="280">
+      </div>
+      <p>
+        Hello there! My name is Tessa and I am a singer! I mainly listen to jazz, pop, and indie styles of music but I love finding new songs from any genre. I studied with Charlene and Greg for a little while and they really helped me build my confidence as a musician. I currently go to school at Metropolitan State in Denver as a music major with a focus on vocal jazz. I love working with kids and helping them grow as people and experiencing life through their unique perspective. When I am not singing, going to school, or working, I love being outside, reading, and writing my own music.
+      </p>
+    </div>
+
+    <!-- Alec -->
+    <div class="w3-col m4 w3-padding-large">
+      <div style="text-align: center;">
+        <span class="tmd-black">Alec - Guitar Coach</span><br>
+        <img src="images/alec.jpeg" class="w3-round w3-image" alt="Alec" width="210" height="280">
+      </div>
+      <p>
+        I am a passionate musician with ten years experience playing the guitar, bass, ukulele and singing. As a musician, I enjoy playing and singing music to share with others from my unique song repertoire. As a teacher, one of my super powers is my abundance of patience to help a student through the various challenges of learning an instrument. It is a priority to me to connect with my students, keep them inspired and make sure they are growing in both skill and confidence. In my spare time I enjoy playing board games and Dungeon and Dragons.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <!-- Tiana -->
+    <div class="w3-col m4 w3-padding-large">
+      <div style="text-align: center;">
+        <span class="tmd-black">Tiana - Voice, Bass, Piano Coach</span><br>
+        <img src="images/tiana.jpeg" class="w3-round w3-image" alt="Tiana" width="210" height="280">
+      </div>
+      <p>
+        Multi-instrumentalist and Vocalist, Tiana Thakur is a Colorado based musician that prides herself in versatility. During her time at Western Illinois University, where she got a BM in Jazz Studies, she explored a variety of instruments as well as voice, that enabled her to participate in a multitude of projects, bands, and ensembles. Tiana broke barriers with her Senior Recital in which she played 8 instruments. Along with playing and singing from many groups, she has also recorded and released music, and will be releasing more in the upcoming future. There is no genre that she shies away from, as her passion for the art of music is ever growing and continues to push her as a composer, performer, teacher, and person.
+      </p>
+    </div>
+
+    <!-- Joe -->
+    <div class="w3-col m4 w3-padding-large">
+      <div style="text-align: center;">
+        <span class="tmd-black">Joe - Rock Band Drum Coach</span><br>
+        <img src="images/joe.jpeg" class="w3-round w3-image" alt="Joe" width="210" height="280">
+      </div>
+      <p>
+        Joe has been playing drums for 20 years. He started teaching and organizing band camps 10 years ago, and teaches all styles and genres. He studied privately under a master drummer, then studied in Nashville for a short time. He has played with local bands, opening for recording artists such as Keith Urban and Blake Shelton, and had two top 100 songs on the national charts. He has enjoyed playing with worship teams in several churches and enjoys making lessons fun and structuring each student’s lessons to their interests and desires.
+      </p>
+    </div>
+  </div>
+<!-- END ABOUT US -->
+
+<!-- CALENDAR -->
+<div class="w3-content w3-container w3-padding-64" id="calendar">
+  <h3 class="w3-center">CALENDAR</h3>
+  <p class="w3-center"><em>2022 Spring Semester</em></p>
+
+  <div class="w3-row">
+
+    <div class="w3-col m6 w3-padding-large">
+      <h4>January 2022</h4>
+      <p>
+        <span class="tmd-black">1/5:</span> Meet the new TMD Coaches open-house 5-6:30pm<br>
+        <span class="tmd-black">1/10:</span> First day of spring semester private lessons begin<br>
+        <span class="tmd-black">1/17:</span> Rock Bands begin this week<br>
+        <span class="tmd-black">1/24:</span> Group classes begin this week
+      </p>
+      <h4>March 2022</h4>
+      <p>
+        <span class="tmd-black">3/6:</span> Pizza karaoke (all-studio) 3:30-5pm<br>
+        <span class="tmd-black">3/14-20:</span> Studio closed for Spring Break
+      </p>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h4>April 2022</h4>
+      <p>
+        <span class="tmd-black">4/10:</span> Pizza Jam (all-studio) ages 11/under 3-4pm<br>
+        <span class="tmd-black">4/10:</span> Pizza Jam (all-studio) ages 12+ 4:15-5:30pm<br>
+        <span class="tmd-black">4/22:</span> Friday Night Rock Band dress rehearsal 11/under 6pm, 12-teen 7pm (all students invited to watch)<br>
+        <span class="tmd-black">4/27:</span> Wednesday Night Rockin' Dad Band dress rehearsal 7-8pm (all students invited to watch)<br>
+        <span class="tmd-black">4/29:</span> Friday Night Rock Band showcases</span>
+      </p>
+      <h4>May 2022</h4>
+      <p>
+        <span class="tmd-black">5/4:</span> Wednesday Night Rockin' Dad Band showcase 7pm (local venue TBD)<br>
+        <span class="tmd-black">5/6:</span> Friday Night Rock Bands movie night 6pm<br>
+        <span class="tmd-black">5/15:</span> Spring concert (TBD) and last day of semester
+      </p>
+      <h4>June 2022</h4>
+      <p>
+        Summer classes/camps begin
+      </p>
+    </div>
+
+
+  </div>
+</div>
+<!-- END CALENDAR -->
+
+<!-- GUITAR SHOP -->
+<div class="w3-content w3-container w3-padding-64" id="guitarShop">
+  <h3 class="w3-center">GUITAR SHOP</h3>
+  <p class="w3-center"><em>Sales & Service</em></p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-padding-large">
+      <p>
+        The Musician's Den offers great prices on used guitars that have been setup to play great. Repairs and services (such as re-stringing your guitar) are also available from Greg who is a certified guitar repair technician.
+      </p>
+      <div style="text-align: center;">
+        <img src="images/guitars.jpeg" class="w3-round w3-image" alt="Guitars" width="280" height="200">
+      </div>
+    </div>
+
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <br>
+      <img src="images/custom-shop-01.JPG" class="w3-round w3-image" alt="Greg working on guitar" width="333" height="333">
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div style="text-align: center;">
+      <a href="mailto:greg@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20guitar%20inventory%20and%20services">Email Greg</a> to learn more.<br>
+    </div>
+  </div>
+</div>
+
+<!-- END GUITAR SHOP -->
+
+<!-- TESTIMONIALS -->
+<div class="w3-content w3-container w3-padding-64" id="testimonials">
+  <h3 class="w3-center">TESTIMONIALS</h3>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+    <div class="mySlides">
+      <q>My 13 year old has been taking acoustic guitar lessons with Greg for 11 months. I am amazed at how much she has learned and grown over that time.</q>
+      <p class="author">- Jenifer F.</p>
+    </div>
+
+    <div class="mySlides">
+      <q>Greg is a phenominal teacher. He is intuitive, soulful and knows how to meet his student exactly where they are on the learning curve. He is a natural, and I would recommend him to anyone--any age and any skill level.</q>
+      <p class="author">- Lisa G.</p>
+    </div>
+
+    <div class="mySlides">
+      <q>I have been playing the guitar for over 25 years. Greg was able to connect to my goals and focus on areas that I want to improve in, and I notice progress every week!</q>
+      <p class="author">- Tim R.</p>
+    </div>
+
+    <!-- Next/prev buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots/bullets/indicators -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+</div>
+<!-- END TESTIMONIALS -->
+
+</div>
+
+<footer class="footer" id="contact">
+  <div class="footer__addr w3-center">
+    <h1 class="footer__logo">The Musician's Den</h1>
+    <address>
+      Castle Rock, CO<br>
+      <a class="w3-center" href="mailto:admin@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">admin@themusiciansden.net</a>
+    </address>
+    <a href="documents/studio-policies.pdf" target="_blank">Studio Policies</a>
+    <ul class="nav__ul">
+      <li>
+        <a href="https://instagram.com/themusiciansdencr" style="padding:0px 0px 0px 0px; font-size: larger;" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.facebook.com/themusiciansdenCR/" style="padding:0px 0px 0px 8px; font-size: larger;" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
