@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>Musician's Den</title>
+<head>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/ebdcb2fe93.js" crossorigin="anonymous"></script>
+  <script src="js/md.js"></script>
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="Stylesheet" href="css/style.css" type="text/css" media="screen">
+
+  <!-- FavIcon -->
+  <link rel="icon" href="http://www.themusiciansden.net/favicon.png">
+
+  <!-- Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Building community through music." />
+  <meta property="og:url" content="www.themusiciansden.net" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Guitar | Voice | Piano | More" />
+  <meta property="og:image" content="images/tmd-og.png" />
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar md-hide-small md-hide-medium" id="mdNavbar">
+    <!-- Contact information and Social Media on the right side of Navbar for large screens -->
+    <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+    <a class="w3-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+
+    <!-- Navigation links -->
+    <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#lessons" class="w3-bar-item w3-button">Lessons</a>
+    <a href="#about" class="w3-bar-item w3-button">About Us</a>
+    <a href="#calendar" class="w3-bar-item w3-button">Calendar</a>
+    <a href="#guitarShop" class="w3-bar-item w3-button">Guitar Service</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+
+  </div>
+
+  <!-- Navbar on medium screens -->
+  <div class="w3-bar md-hide-small md-hide-large" id="mdMediumNavbar">
+    <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a></li>
+    <a class="md-medium-bar-item w3-right" style="padding:5px 8px 0px 8px; font-size: large;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a></li>
+    
+    <a href="index.html#home" class="md-medium-bar-item w3-button">Home</a>
+    <a href="#lessons" class="md-medium-bar-item w3-button">Lessons</a>
+    <a href="#about" class="md-medium-bar-item w3-button">About Us</a>
+    <a href="#calendar" class="md-medium-bar-item w3-button">Calendar</a>
+    <a href="#guitarShop" class="md-medium-bar-item w3-button">Guitar Service</a>
+    <a href="#contact" class="md-medium-bar-item w3-button">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div class="w3-bar md-hide-medium md-hide-large" id="mdSmallNavbar">
+  <a class="w3-bar-item w3-button w3-hover-black w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <i class="fas fa-bars"></i>
+  </a>
+  
+  <a href="index.html#home" class="w3-bar-item w3-button">Home</a>
+
+  <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://instagram.com/themusiciansdencr" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+  <a class="w3-bar-item" style="padding:5px 16px 0px 16px; font-size: larger;" href="https://www.facebook.com/themusiciansdenCR/" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide md-hide-large md-hide-medium">
+    <a href="#lessons" class="w3-bar-item w3-button" onclick="toggleFunction()">Lessons</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
+    <a href="#calendar" class="w3-bar-item w3-button" onclick="toggleFunction()">Calendar</a>
+    <a href="#guitarShop" class="w3-bar-item w3-button" onclick="toggleFunction()">Guitar Service</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="flexible-container">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3zR7d_YVSf7X8f-u-CJTbWKGUWriFYE0dKoJ3rgoLvLTjug/viewform?embedded=true" width="640" height="1018" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<footer class="footer" id="contact">
+  <div class="footer__addr w3-center">
+    <h1 class="footer__logo">The Musician's Den</h1>
+    <address>
+      Castle Rock, CO<br>
+      <a class="w3-center" href="mailto:admin@themusiciansden.net?Subject=I'd%20like%20to%20learn%20more%20about%20The%20Musician's%20Den">admin@themusiciansden.net</a>
+    </address>
+    <a href="documents/studio-policies.pdf" target="_blank">Studio Policies</a>
+    <ul class="nav__ul">
+      <li>
+        <a href="https://instagram.com/themusiciansdencr" style="padding:0px 0px 0px 0px; font-size: larger;" target="_blank"><i class="fab fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.facebook.com/themusiciansdenCR/" style="padding:0px 0px 0px 8px; font-size: larger;" target="_blank"><i class="fab fa-facebook w3-hover-opacity"></i></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
